@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Live Stream Player</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/shaka-player@4.3.4/dist/shaka-player.ui.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shaka-player@4.3.4/dist/controls.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --bg-color: #121212;
+            --primary-red: #e50914; 
+            --primary-red-dark: #b91c1c;
+            --card-bg: #1e1e1e;
+            --text-light: #f1f5f9;
+            --text-muted: #94a3b8;
+            --border-color: #2d2d2d;
+            --popup-bg: #282828;
+            --popup-shadow-color: rgba(229, 9, 20, 0.4);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-light);
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 1rem;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* --- UPDATED: Stream Header (Now a separate card) --- */
+        .stream-header {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 0.75rem 1.25rem;
+            border-radius: 12px; /* Full border radius */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem; /* Added space below header */
+        }
+
+        .stream-header h1 {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        .live-badge {
+            background-color: var(--primary-red);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            animation: pulse 1.5s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(229, 9, 20, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(229, 9, 20, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(229, 9, 20, 0); }
+        }
+
+        /* --- UPDATED: Player Container (Made larger) --- */
+        #player-container {
+            width: 100%;
+            height: 50vh; /* Takes up 50% of the viewport height */
+            max-height: 600px; /* Caps the height on larger screens */
+            background-color: #000;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            border-radius: 12px; /* Added rounded corners */
+            overflow: hidden; /* Ensures video respects the border radius */
+        }
+        
+        .info-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.25rem;
+            margin-top: 1rem;
+            text-align: center;
+        }
+        
+        .info-card h2 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            color: var(--text-muted);
+        }
+        
+        .action-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            width: 100%;
+            padding: 0.8rem 1rem;
+            border-radius: 8px;
+            background: linear-gradient(90deg, var(--primary-red), var(--primary-red-dark));
+            color: white;
+            font-weight: 600;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .action-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px var(--popup-shadow-color);
+        }
+        
+        .action-button.copied {
+            background: linear-gradient(90deg, #22c55e, #4ade80);
+        }
+
+        .back-link {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            margin-top: 1.5rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            padding: 0.5rem;
+            border-radius: 8px;
+            transition: background-color 0.2s ease;
+        }
+
+        .back-link:hover {
+            background-color: var(--card-bg);
+            color: var(--text-light);
+        }
+        
+        .error-message {
+             text-align: center;
+             padding: 4rem 1rem;
+             background-color: var(--card-bg);
+             border: 1px solid var(--border-color);
+             border-radius: 12px;
+        }
+        .error-message h2 {
+            color: var(--primary-red);
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .telegram-popup {
+            position: fixed; top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            background: var(--popup-bg); color: var(--text-light);
+            padding: 30px 20px; border-radius: 12px;
+            box-shadow: 0 0 50px 10px var(--popup-shadow-color);
+            z-index: 10000; text-align: center;
+            width: 90%; max-width: 350px;
+            display: none; border: 1px solid var(--primary-red-dark);
+            animation: popIn 0.3s ease-out forwards;
+        }
+
+        @keyframes popIn {
+            from { opacity: 0; transform: translate(-50%, -50%) scale(0.8); }
+            to { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+        }
+
+        .telegram-popup h2 {
+            margin-top: 0; color: var(--primary-red);
+            font-size: 1.5rem; margin-bottom: 0.5rem;
+        }
+        .telegram-popup p {
+            font-size: 0.9rem; color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
+        .telegram-popup button {
+            width: 100%; padding: 12px;
+            margin-top: 12px; font-size: 1rem;
+            border: none; border-radius: 6px;
+            cursor: pointer; font-weight: 600;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .telegram-popup button:hover {
+             transform: translateY(-2px);
+             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .telegram-popup .join-btn {
+            background: linear-gradient(90deg, var(--primary-red), var(--primary-red-dark));
+            color: white;
+        }
+        .telegram-popup .joined-btn {
+            background-color: var(--border-color);
+            color: var(--text-light);
+        }
+
+        @media (max-width: 480px) {
+            body { padding: 0.5rem; }
+            .telegram-popup { padding: 20px 15px; }
+        }
+    </style>
+</head>
+<body>
+
+    <main class="container">
+        <div id="stream-content">
+            </div>
+    </main>
+
+    <div class="telegram-popup" id="telegramPopup">
+        <h2><i class="fa-brands fa-telegram"></i> Support Us!</h2>
+        <p>Join our Telegram channel <strong>AllrounderLive</strong> for instant updates, highlights, and exclusive links.</p>
+        <a href="https://t.me/+xdQNNePetGxjYjI1" target="_blank" rel="noopener"><button class="join-btn">Join Now</button></a>
+        <button class="joined-btn" onclick="document.getElementById('telegramPopup').style.display='none';">Already Joined</button>
+    </div>
+
+    <script>
+        // Your Stream Data
+        const streams = {
+          "peng": {
+                name: "prime english",
+                mpd: "https://a173aivottepl-a.akamaihd.net/syd-nitro/live/clients/dash/enc/n2rojl7szm/out/v1/bedaa948e7a24dc0b5fd5d7b38534d8c/cenc.mpd",
+                keyId: "29f846155e356c97aba72b5eaedbd65c",
+                key: "15b0ddc9d63701b1c3afa4a1771095c7",
+                poster: "https://mma.prnewswire.com/media/1919551/WillowTV_Logo.jpg?p=facebook"
+            },
+            "shoq": {
+                name: "shoq",
+                mpd: "https://live.shoq.com.pk/live/eds/ICC_Women_World_Cup_2025/DASH/ICC_Women_World_Cup_2025.mpd",
+                keyId: "a6dfc4f17d70d8d07639659193f03b25",
+                key: "893eacfabe386144b81733d622a7ad17",
+                poster: "https://i.ytimg.com/vi/LXb3EKWsInQ/maxresdefault.jpg"
+            },
+            "phin": {
+                name: "prime hindi",
+                mpd: "https://abbbmftaaaaaaaamgdshloqn26zka.otte.live.cf.ww.aiv-cdn.net/sin-nitro/live/dash/enc/jr0zvtazlv/out/v1/6bae9634f7594a738",
+                keyId: "1416f69da90f62735a6521aae461dd74",
+                key: "2ce2e7d0af813fd26c6fe0b59201ced5",
+                poster: "https://via.placeholder.com/1280x720/010409/FFFFFF.png?text=PRIME+HINDI"
+            },
+            "wcb": {
+                name: "Willow By Cricbuzz",
+                mpd: "https://a57aivottepl-a.akamaihd.net/pdx-nitro/live/clients/dash/enc/btnbacwsfy/out/v1/30c1e247dafe4ea09faa4f6c55cf0da3/cenc.mpd",
+                keyId: "d5ddadddceb398f349d252109a03f5f5",
+                key: "ccb468efbdffd4eac17be5b2dc129ab1",
+                poster: "https://via.placeholder.com/1280x720/010409/FFFFFF.png?text=WILLOW+BY+CRICBUZZ"
+            },
+            "willow": {
+                name: "Willow",
+                mpd: "https://ottb.live.cf.ww.aiv-cdn.net/bom-nitro/live/clients/dash/enc/f60kqesunw/out/v1/a435ed7a00f947deb4369b46d8f2fb70/cenc.mpd",
+                keyId: "1779c27b9d077a3ba0c9cc1bb9a94b9f",
+                key: "cc5cf3b7928fb9e0a1ee6a8b566f0a8e",
+                poster: "https://via.placeholder.com/1280x720/010409/FFFFFF.png?text=WILLOW"
+            },
+            "tnt2": {
+                name: "Tnt 2",
+                mpd: "https://ottb.live.cf.ww.aiv-cdn.net/sin-nitro/live/dash/enc/f0qvkrra8j/out/v1/f8fa17f087564f51aa4d5c700be43ec4/cenc.mpd",
+                keyId: "0d9efa8287a52a2497a281f7a9012211",
+                key: "e4f832d372943014fe5c30928a90e547",
+                poster: "https://via.placeholder.com/1280x720/010409/FFFFFF.png?text=TNT+2"
+            },
+            "tnt3": {
+                name: "Tnt 3",
+                mpd: "https://ottb.live.cf.ww.aiv-cdn.net/lhr-nitro/live/dash/enc/lsdasbvglv/out/v1/bb548a3626cd4708afbb94a58d71dce9/cenc.mpd",
+                keyId: "08efc7fb107981608f7b64db5ea62469",
+                key: "3a6844bc9f0d9d9fd962639d7e4eb76a",
+                poster: "https://via.placeholder.com/1280x720/010409/FFFFFF.png?text=TNT+3"
+            }
+        };
+
+        document.addEventListener("shaka-ui-loaded", () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const streamId = urlParams.get('id');
+            const streamData = streams[streamId];
+
+            if (streamData) {
+                document.title = `${streamData.name} // Live Stream`;
+                renderPlayerUI(streamData);
+                initShakaPlayer(streamData);
+                setTimeout(() => {
+                    document.getElementById('telegramPopup').style.display = 'block';
+                }, 1000);
+            } else {
+                renderErrorUI();
+            }
+        });
+        
+        document.addEventListener("shaka-ui-load-failed", (error) => console.error("Shaka UI failed to load.", error));
+
+        function renderPlayerUI(data) {
+            const contentDiv = document.getElementById('stream-content');
+            contentDiv.innerHTML = `
+                <div class="stream-header"><h1>${data.name}</h1><div class="live-badge"><i class="fa-solid fa-circle"></i> LIVE</div></div>
+                <div id="player-container" data-shaka-player-container>
+                    <video id="video-player" style="width:100%;height:100%;" autoplay playsinline data-shaka-player></video>
+                </div>
+                <div class="info-card"><h2><i class="fa-solid fa-bell"></i> Follow us for Updates!</h2><a href="https://t.me/+xdQNNePetGxjYjI1" target="_blank" rel="noopener" class="action-button"><i class="fa-brands fa-telegram"></i> Click Here To Join Telegram</a></div>
+                <div class="info-card"><h2><i class="fa-solid fa-link"></i> Copy Link & Share</h2><button class="action-button" id="shareButton"><i class="fa-solid fa-share-nodes"></i> Click Here To Share This Page Link</button></div>
+                <a href="#" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to All Streams</a>
+            `;
+            document.getElementById('shareButton').addEventListener('click', copyAndShare);
+        }
+        
+        function renderErrorUI() {
+            const contentDiv = document.getElementById('stream-content');
+            document.title = "Error - Stream Not Found";
+            contentDiv.innerHTML = `<div class="error-message"><h2><i class="fa-solid fa-triangle-exclamation"></i> Stream Not Found</h2><p>The requested stream ID is invalid or the stream is offline.</p><a href="#" class="back-link" style="margin-top: 2rem;"><i class="fa-solid fa-arrow-left"></i> Back to All Streams</a></div>`;
+        }
+
+        async function initShakaPlayer(data) {
+            const video = document.getElementById('video-player');
+            const container = document.getElementById('player-container');
+            const player = new shaka.Player();
+            await player.attach(video);
+            const ui = new shaka.ui.Overlay(player, container, video);
+            player.configure({
+                drm: { clearKeys: { [data.keyId]: data.key } },
+                streaming: {
+                    rebufferingGoal: 1, bufferingGoal: 3, bufferBehind: 5,
+                    lowLatencyMode: true, autoLowLatencyMode: true,
+                    startAtSegmentBoundary: true, ignoreTextStreamFailures: true
+                },
+                manifest: { dash: { autoCorrectDrift: true, ignoreMinBufferTime: true } }
+            });
+            ui.configure({
+                'controlPanelElements': ["play_pause", "time_and_duration", "mute", "volume", "spacer", "quality", "fullscreen", "overflow_menu"],
+                'seekBarColors': { base: 'rgba(255, 255, 255, 0.2)', buffered: 'rgba(255, 255, 255, 0.4)', played: 'var(--primary-red)' },
+                'volumeBarColors': { base: 'rgba(255, 255, 255, 0.4)', level: 'var(--primary-red)' }
+            });
+            try {
+                await player.load(data.mpd);
+                console.log('The video has been loaded successfully!');
+            } catch (error) {
+                console.error('Error loading stream:', error);
+            }
+        }
+        
+        async function copyAndShare() {
+            const shareButton = document.getElementById('shareButton');
+            const originalHTML = shareButton.innerHTML;
+            try {
+                await navigator.clipboard.writeText(window.location.href);
+                shareButton.innerHTML = `<i class="fa-solid fa-check"></i> Link Copied!`;
+                shareButton.classList.add('copied');
+                setTimeout(() => {
+                    shareButton.innerHTML = originalHTML;
+                    shareButton.classList.remove('copied');
+                }, 2000);
+            } catch (err) {
+                console.error('Failed to copy link:', err);
+            }
+        }
+    </script>
+
+</body>
+</html>
