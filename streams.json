@@ -80,7 +80,7 @@
         "name": "prrime",
         "type": "iframe",
         "iframeSrc": "https://cricketstan.github.io/channel-12/"
-    }
+    },
    "ss1e": {
         "name": "Star Sports English HD",
         "mpd": "https://jiotvmblive.cdn.jio.com/bpk-tv/Star_Sports_HD1_BTS/output/index.mpd",
