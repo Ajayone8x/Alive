@@ -1,0 +1,84 @@
+{
+          "peng": {
+                "name": "prime english",
+                "mpd": "https://aba3uy3aaaaaaaamfjv2jyrjdxcj4.otte.live.cf.ww.aiv-cdn.net/sin-nitro/live/dash/enc/ebgsyorlcl/out/v1/ce95d81f287040d5a3fa6d4b145be849/cenc.mpd",
+                "keyId": "9a1b6c795aa107e48d6be695705e112f",
+                "key": "24f64f1bdfe33c496e293032e70775b3",
+                "poster": "https://mma.prnewswire.com/media/1919551/WillowTV_Logo.jpg?p=facebook"
+            },
+            "shoq": {
+                "name": "shoq",
+                "mpd": "https://live.shoq.com.pk/live/eds/ICC_Women_World_Cup_2025/DASH/ICC_Women_World_Cup_2025.mpd",
+                "keyId": "a6dfc4f17d70d8d07639659193f03b25",
+                "key": "893eacfabe386144b81733d622a7ad17",
+                "poster": "https://i.ytimg.com/vi/LXb3EKWsInQ/maxresdefault.jpg"
+            },
+            "phin": {
+                "name": "prime hindi",
+                "mpd": "https://abbbmftaaaaaaaamgdshloqn26zka.otte.live.cf.ww.aiv-cdn.net/sin-nitro/live/dash/enc/jr0zvtazlv/out/v1/6bae9634f7594a738530656284177423/cenc.mpd",
+                "keyId": "2ce2e7d0af813fd26c6fe0b59201ced5",
+                "key": "1416f69da90f62735a6521aae461dd74",
+                "poster": "https://via.placeholder.com/1280x720/010409/FFFFFF.png?text=PRIME+HINDI"
+            },
+            "wcb": {
+                "name": "Willow By Cricbuzz",
+                "mpd": "https://a57aivottepl-a.akamaihd.net/pdx-nitro/live/clients/dash/enc/btnbacwsfy/out/v1/30c1e247dafe4ea09faa4f6c55cf0da3/cenc.mpd",
+                "keyId": "d5ddadddceb398f349d252109a03f5f5",
+                "key": "ccb468efbdffd4eac17be5b2dc129ab1",
+                "poster": "https://via.placeholder.com/1280x720/010409/FFFFFF.png?text=WILLOW+BY+CRICBUZZ"
+            },
+            "willow": {
+                "name": "Willow",
+                "mpd": "https://ottb.live.cf.ww.aiv-cdn.net/bom-nitro/live/clients/dash/enc/f60kqesunw/out/v1/a435ed7a00f947deb4369b46d8f2fb70/cenc.mpd",
+                "keyId": "1779c27b9d077a3ba0c9cc1bb9a94b9f",
+                "key": "cc5cf3b7928fb9e0a1ee6a8b566f0a8e",
+                "poster": "https://via.placeholder.com/1280x720/010409/FFFFFF.png?text=WILLOW"
+            },
+            "tnt2": {
+                "name": "Tnt 2",
+                "mpd": "https://ottb.live.cf.ww.aiv-cdn.net/sin-nitro/live/dash/enc/f0qvkrra8j/out/v1/f8fa17f087564f51aa4d5c700be43ec4/cenc.mpd",
+                "keyId": "0d9efa8287a52a2497a281f7a9012211",
+                "key": "e4f832d372943014fe5c30928a90e547",
+                "poster": "https://via.placeholder.com/1280x720/010409/FFFFFF.png?text=TNT+2"
+            },
+            "tnt3": {
+                "name": "Tnt 3",
+                "mpd": "https://ottb.live.cf.ww.aiv-cdn.net/lhr-nitro/live/dash/enc/lsdasbvglv/out/v1/bb548a3626cd4708afbb94a58d71dce9/cenc.mpd",
+                "keyId": "08efc7fb107981608f7b64db5ea62469",
+                "key": "3a6844bc9f0d9d9fd962639d7e4eb76a",
+                "poster": "https://via.placeholder.com/1280x720/010409/FFFFFF.png?text=TNT+3"
+            }, 
+        
+    "tnt4": {
+        "name": "Tnt 4",
+        "mpd":"https://ottb.live.cf.ww.aiv-cdn.net/lhr-nitro/live/dash/enc/i2pcjr4pe5/out/v1/912e9db56d75403b8a9ac0a719110f36/cenc.mpd",
+        "keyId": "5ccdccf0818d3d9ff6c26076fc1153ac",
+        "key": "ddd2b372702e42b0d2708a70b91dec8d"
+    },
+    "tnt1": {
+        "name": "Tnt 1",
+        "mpd": "https://ottb.live.cf.ww.aiv-cdn.net/lhr-nitro/live/dash/enc/bsaaetko8v/out/v1/bd3b0c314fff4bb1ab4693358f3cd2d3/cenc.mpd",
+        "keyId": "5deb190b1dac28e46c0bdada7668b7de",
+        "key": "ddd2b372702e42b0d2708a70b91dec8d"
+    },
+    "ss2hd": {
+        "name": "star sports2 hd",
+        "mpd": "https://nonprod-sports-hin.jiocinema.com/bpk-tv/JC_Sports18_1HD/JCHLS/index.m3u8"
+    },
+    "ss1hd": {
+        "name": "Star Sports Hindi HD",
+        "mpd": "https://jiotvmblive.cdn.jio.com/bpk-tv/Star_Sports_HD1_Hindi_BTS/output/index.mpd?hdnea=st=1759973407~exp=1760059807~acl=/*~hmac=10b09dff320f3176bf5f5051a29065009b29999ad1533b391190dca7f39dfa41",
+        "keyId": "400131994b445d8c8817202248760fda",
+        "key": "2d56cb6f07a75b9aff165d534ae2bfc4",
+        "license": {
+            "cookie": "__hdnea=st=1759973407~exp=1760059807~acl=/*~hmac=10b09dff320f3176bf5f5051a29065009b29999ad1533b391190dca7f39dfa41",
+            "referer": "https://www.jiotv.com/",
+            "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Mobile Safari/537.36"
+        }
+    },
+    "iff": {
+        "name": "prrime",
+        "type": "iframe",
+        "iframeSrc": "https://cricketstan.github.io/channel-12/"
+    }
+}
