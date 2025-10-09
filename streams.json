@@ -90,5 +90,64 @@
             "referer": "https://www.jiotv.com/",
             "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Mobile Safari/537.36"
         }
+    },
+     "ss2e": {
+        "name": "Star Sports 2 English HD",
+        "mpd": "https://jiotvmblive.cdn.jio.com/bpk-tv/Star_Sports_HD2_BTS/output/index.mpd",
+        "keyId": "9457eb90129456fa8ea95e10ba4ac51e",
+        "key": "e620a970cea474c491ac78ae71a4d764",
+        "license": {
+            "cookie": "__hdnea__=st=1760018403~exp=1760104803~acl=/*~hmac=e6c7f50a3fefb4e5c6969a1a1527340d6bb48499fe1c0cf48bec210af58a1f5d",
+            "referer": "https://www.jiotv.com/",
+            "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Mobile Safari/537.36"
+        }
+    },
+    
+     "ss2h": {
+        "name": "Star Sports 2 Hindi HD",
+        "mpd": "https://jiotvmblive.cdn.jio.com/bpk-tv/Sports181_HD_BTS/output/index.mpd",
+        "keyId": "b9d4acedc66c5660a1e06197a55bccd2",
+        "key": "dd53bab1a42f41ae8f0a5c8fd286f456",
+        "license": {
+            "cookie": "__hdnea__=st=1760018487~exp=1760104887~acl=/*~hmac=a20345a967c419898b1db90dc1e96ce9c4652f253df4d050de69edb903ab3f68",
+            "referer": "https://www.jiotv.com/",
+            "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Mobile Safari/537.36"
+        }
+    },
+    
+     "ss2tel": {
+        "name": "Star Sports2 Telugu HD",
+        "mpd": "https://jiotvmblive.cdn.jio.com/bpk-tv/Star_Sports2_Telugu_HD_BTS/output/index.mpd",
+        "keyId": "c8a2fb190fc957c1b8333af9a7a39d31",
+        "key": "be7497b59d4ce9e33d29bfd1d38bad1d",
+        "license": {
+            "cookie": "__hdnea__=st=1760018735~exp=1760105135~acl=/*~hmac=8398896f6bec29623ff1761419a993a70778c3496d25e5f25b716d07c166c9a9",
+            "referer": "https://www.jiotv.com/",
+            "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Mobile Safari/537.36"
+        }
+    
+    },
+     "ss1tam": {
+        "name": "Star Sports1 Tamil HD",
+        "mpd": "https://jiotvmblive.cdn.jio.com/bpk-tv/Star_Sports1_Tamil_BTS/output/index.mpd",
+        "keyId": "d0d750ebd52b5756aa7fb833f61ceece",
+        "key": "4ae62a20c030c918aad24193c1dda229",
+        "license": {
+            "cookie": "__hdnea__=st=1760018878~exp=1760105278~acl=/*~hmac=7c6ce2ede5aec65e965cc9c177e1137958207700f5ff9d6a4cb03886da5155f0",
+            "referer": "https://www.jiotv.com/",
+            "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Mobile Safari/537.36"
+        }
+    
+    },
+     "ss1kan": {
+        "name": "Star Sports1 kannada HD",
+        "mpd": "",
+        "keyId": "",
+        "key": "",
+        "license": {
+            "cookie": "__hdnea__=st=1760017698~exp=1760104098~acl=/*~hmac=eec66b39bb92d469473abfb6ec142535d48adbaff00722b854e761b9a7a54c7d",
+            "referer": "https://www.jiotv.com/",
+            "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Mobile Safari/537.36"
+        }
     }
 }
