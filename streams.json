@@ -65,7 +65,7 @@
         "name": "star sports2 hd",
         "mpd": "https://nonprod-sports-hin.jiocinema.com/bpk-tv/JC_Sports18_1HD/JCHLS/index.m3u8"
     },
-    "ss1hd": {
+    "ss1h": {
         "name": "Star Sports Hindi HD",
         "mpd": "https://jiotvmblive.cdn.jio.com/bpk-tv/Star_Sports_HD1_Hindi_BTS/output/index.mpd?hdnea=st=1759973407~exp=1760059807~acl=/*~hmac=10b09dff320f3176bf5f5051a29065009b29999ad1533b391190dca7f39dfa41",
         "keyId": "400131994b445d8c8817202248760fda",
@@ -81,4 +81,15 @@
         "type": "iframe",
         "iframeSrc": "https://cricketstan.github.io/channel-12/"
     }
+   "ss1e": {
+        "name": "Star Sports English HD",
+        "mpd": "https://jiotvmblive.cdn.jio.com/bpk-tv/Star_Sports_HD1_BTS/output/index.mpd",
+        "keyId": "965dc2ddb1d85138ad787999a7f30ca5",
+        "key": "859695076e67fe961836b564db6d689c",
+        "license": {
+            "cookie": "__hdnea__=st=1759995604~exp=1760082004~acl=/*~hmac=f02562a7c0c8f19305ea150684851e8cc39fbef274e1ce5e6e8f77cbce0b735a1",
+            "referer": "https://www.jiotv.com/",
+            "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Mobile Safari/537.36"
+        }
+    },
 }
