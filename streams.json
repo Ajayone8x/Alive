@@ -141,9 +141,9 @@
     },
      "ss1kan": {
         "name": "Star Sports1 kannada HD",
-        "mpd": "",
-        "keyId": "",
-        "key": "",
+        "mpd": "https://jiotvpllive.cdn.jio.com/bpk-tv/Star_Sports2_Kannada_BTS/output/index.mpd",
+        "keyId": "7af2add2968a56309519ac2680c18f25",
+        "key": "f992a14e0def17ccdfe16f58c4ce56c5",
         "license": {
             "cookie": "__hdnea__=st=1760017698~exp=1760104098~acl=/*~hmac=eec66b39bb92d469473abfb6ec142535d48adbaff00722b854e761b9a7a54c7d",
             "referer": "https://www.jiotv.com/",
