@@ -22,9 +22,9 @@
     },
     "wcb": {
         "name": "Willow By Cricbuzz",
-        "mpd": "https://a57aivottepl-a.akamaihd.net/pdx-nitro/live/clients/dash/enc/btnbacwsfy/out/v1/30c1e247dafe4ea09faa4f6c55cf0da3/cenc.mpd",
-        "keyId": "d5ddadddceb398f349d252109a03f5f5",
-        "key": "ccb468efbdffd4eac17be5b2dc129ab1",
+        "mpd": "https://a166aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/clients/dash/enc/xgx8wdfenz/out/v1/82763ceb918f42f5a5347417ef9cdc76/cenc-sd.mpd",
+        "keyId": "c745ae85f3a06feba71b92df84f3a271",
+        "key": "3b18e09add4affef023cbf5f53cb11be",
         "poster": "https://via.placeholder.com/1280x720/010409/FFFFFF.png?text=WILLOW+BY+CRICBUZZ"
     },
     "willow": {
