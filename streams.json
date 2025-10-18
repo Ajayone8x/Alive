@@ -64,9 +64,9 @@
         "keyId": "5deb190b1dac28e46c0bdada7668b7de",
         "key": "ddd2b372702e42b0d2708a70b91dec8d"
     },
-    "ss2hd": {
-        "name": "star sports2 hd",
-        "mpd": "https://nonprod-sports-hin.jiocinema.com/bpk-tv/JC_Sports18_1HD/JCHLS/index.m3u8"
+    "sonyliv": {
+        "name": "sony livv",
+        "mpd": "https://sonydaimenew.akamaized.net/hls/live/2018457/engvsnz/ENG/std_mdh-800300010.m3u8?hdnea=exp=1760810764~acl=/*~id=21295569609916440035509981405415~hmac=529319f1bf269649f80155359dee736525941bd98efd05e1407fa61c56c49f00"
     },
     "ss1h": {
         "name": "Star Sports Hindi HD",
