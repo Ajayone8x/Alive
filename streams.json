@@ -68,34 +68,34 @@
         "name": "sony livv",
         "mpd": "https://sonydaimenew.akamaized.net/hls/live/2018457/engvsnz/ENG/std_mdh-800300010.m3u8?hdnea=exp=1760810764~acl=/*~id=21295569609916440035509981405415~hmac=529319f1bf269649f80155359dee736525941bd98efd05e1407fa61c56c49f00"
     },
-    {
-      "id": "fox-501",
-      "name": "Fox Cricket 501",
-      "type": "iframe",
-      "iframeSrc": "https://www.livereacting.com/tools/hls-player-embed?url=https%3A%2F%2Fhugh.cdn.rumble.cloud%2Flive%2Fy16rq9u0%2Fslot-21%2F8wef-hiy9%2Fchunklist.m3u8"
-}, 
+    "fox-501": {
+        "id": "fox-501",
+        "name": "Fox Cricket 501",
+        "type": "iframe",
+        "iframeSrc": "https://www.livereacting.com/tools/hls-player-embed?url=https%3A%2F%2Fhugh.cdn.rumble.cloud%2Flive%2Fy16rq9u0%2Fslot-21%2F8wef-hiy9%2Fchunklist.m3u8"
+    },
     "ss1h": {
         "name": "Star Sports Hindi HD",
         "mpd": "https://jiotvmblive.cdn.jio.com/bpk-tv/Star_Sports_HD1_Hindi_BTS/output/index.mpd?hdnea=st=1759973407~exp=1760059807~acl=/*~hmac=10b09dff320f3176bf5f5051a29065009b29999ad1533b391190dca7f39dfa41",
         "keyId": "400131994b445d8c8817202248760fda",
         "key": "2d56cb6f07a75b9aff165d534ae2bfc4",
         "license": {
-            "cookie":"__hdnea=st=1760524201~exp=1760610601~acl=/*~hmac=2663fbf13404154d77f9ca4ff7874829d63497e0d6db85da11af7a336d7b3e7f",
+            "cookie": "__hdnea=st=1760524201~exp=1760610601~acl=/*~hmac=2663fbf13404154d77f9ca4ff7874829d63497e0d6db85da11af7a336d7b3e7f",
             "referer": "https://www.jiotv.com/",
             "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Mobile Safari/537.36"
         }
     },
-{
-      "id": "fox",
-      "name": "Fox Cricket 501",
-      "type": "iframe",
-      "iframeSrc": "https://fox-501-allrounder745.onrender.com/"
-     },
-    {
-      "id": "ios",
-      "name": "Appel Wale",
-      "type": "iframe",
-      "iframeSrc": "https://cricketstan.github.io/ios/"
+    "fox": {
+        "id": "fox",
+        "name": "Fox Cricket 501",
+        "type": "iframe",
+        "iframeSrc": "https://fox-501-allrounder745.onrender.com/"
+    },
+    "ios": {
+        "id": "ios",
+        "name": "Appel Wale",
+        "type": "iframe",
+        "iframeSrc": "https://cricketstan.github.io/ios/"
     },
     "sl": {
         "name": "sonyliv",
@@ -104,7 +104,7 @@
     },
     "ss1e": {
         "name": "Star Sports English HD",
-        "mpd": "https://jiotvmblive.cdn.jio.com/bpk-tv/Star_Sports_HD1_BTS/output/index.mpd",
+        "mpd": "https://jiotvmblive.cdn.jio.com/bpk-.tv/Star_Sports_HD1_BTS/output/index.mpd",
         "keyId": "965dc2ddb1d85138ad787999a7f30ca5",
         "key": "859695076e67fe961836b564db6d689c",
         "license": {
@@ -113,7 +113,7 @@
             "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Mobile Safari/537.36"
         }
     },
-     "ss2e": {
+    "ss2e": {
         "name": "Star Sports 2 English HD",
         "mpd": "https://jiotvpllive.cdn.jio.com/bpk-tv/Star_Sports_HD2_BTS/output/index.mpd",
         "keyId": "9457eb90129456fa8ea95e10ba4ac51e",
@@ -124,8 +124,7 @@
             "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Mobile Safari/537.36"
         }
     },
-    
-     "ss2h": {
+    "ss2h": {
         "name": "Star Sports 2 Hindi HD",
         "mpd": "https://jiotvmblive.cdn.jio.com/bpk-tv/Sports181_HD_BTS/output/index.mpd",
         "keyId": "b9d4acedc66c5660a1e06197a55bccd2",
@@ -136,8 +135,7 @@
             "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Mobile Safari/537.36"
         }
     },
-    
-     "ss2tel": {
+    "ss2tel": {
         "name": "Star Sports2 Telugu HD",
         "mpd": "https://jiotvmblive.cdn.jio.com/bpk-tv/Star_Sports2_Telugu_HD_BTS/output/index.mpd",
         "keyId": "c8a2fb190fc957c1b8333af9a7a39d31",
@@ -147,9 +145,8 @@
             "referer": "https://www.jiotv.com/",
             "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Mobile Safari/537.36"
         }
-    
     },
-     "ss1tam": {
+    "ss1tam": {
         "name": "Star Sports1 Tamil HD",
         "mpd": "https://jiotvpllive.cdn.jio.com/bpk-tv/Star_Sports_1_Tamil_HD_BTS/output/index.mpd",
         "keyId": "2272c0bc6b2e5cb090b1f55996e0026c",
@@ -159,9 +156,8 @@
             "referer": "https://www.jiotv.com/",
             "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Mobile Safari/537.36"
         }
-    
     },
-     "ss1kan": {
+    "ss1kan": {
         "name": "Star Sports1 kannada HD",
         "mpd": "https://jiotvpllive.cdn.jio.com/bpk-tv/Star_Sports2_Kannada_BTS/output/index.mpd",
         "keyId": "7af2add2968a56309519ac2680c18f25",
