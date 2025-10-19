@@ -68,6 +68,12 @@
         "name": "sony livv",
         "mpd": "https://sonydaimenew.akamaized.net/hls/live/2018457/engvsnz/ENG/std_mdh-800300010.m3u8?hdnea=exp=1760810764~acl=/*~id=21295569609916440035509981405415~hmac=529319f1bf269649f80155359dee736525941bd98efd05e1407fa61c56c49f00"
     },
+    {
+      "id": "fox-501",
+      "name": "Fox Cricket 501",
+      "type": "iframe",
+      "iframeSrc": "https://www.livereacting.com/tools/hls-player-embed?url=https%3A%2F%2Fhugh.cdn.rumble.cloud%2Flive%2Fy16rq9u0%2Fslot-21%2F8wef-hiy9%2Fchunklist.m3u8"
+}, 
     "ss1h": {
         "name": "Star Sports Hindi HD",
         "mpd": "https://jiotvmblive.cdn.jio.com/bpk-tv/Star_Sports_HD1_Hindi_BTS/output/index.mpd?hdnea=st=1759973407~exp=1760059807~acl=/*~hmac=10b09dff320f3176bf5f5051a29065009b29999ad1533b391190dca7f39dfa41",
@@ -78,6 +84,18 @@
             "referer": "https://www.jiotv.com/",
             "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Mobile Safari/537.36"
         }
+    },
+{
+      "id": "fox",
+      "name": "Fox Cricket 501",
+      "type": "iframe",
+      "iframeSrc": "https://fox-501-allrounder745.onrender.com/"
+     },
+    {
+      "id": "ios",
+      "name": "Appel Wale",
+      "type": "iframe",
+      "iframeSrc": "https://cricketstan.github.io/ios/"
     },
     "sl": {
         "name": "sonyliv",
