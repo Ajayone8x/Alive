@@ -76,7 +76,7 @@
     },
     "ss1h": {
         "name": "Star Sports Hindi HD",
-        "mpd": "https://jiotvmblive.cdn.jio.com/bpk-tv/Star_Sports_HD1_Hindi_BTS/output/index.mpd?hdnea=st=1759973407~exp=1760059807~acl=/*~hmac=10b09dff320f3176bf5f5051a29065009b29999ad1533b391190dca7f39dfa41",
+        "mpd": "https://jiotvmblive.cdn.jio.com/bpk-tv/Star_Sports_HD1_BTS/output/index.mpd",
         "keyId": "400131994b445d8c8817202248760fda",
         "key": "2d56cb6f07a75b9aff165d534ae2bfc4",
         "license": {
