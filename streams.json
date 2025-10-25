@@ -167,11 +167,11 @@
     },
     "ss1tam": {
         "name": "Star Sports1 Tamil HD",
-        "mpd": "https://jiotvpllive.cdn.jio.com/bpk-tv/Star_Sports_1_Tamil_HD_BTS/output/index.mpd",
-        "keyId": "2272c0bc6b2e5cb090b1f55996e0026c",
-        "key": "943923934de1d5536ab01c67fca8b337",
+        "mpd": "https://jiotvmblive.cdn.jio.com/bpk-tv/Star_Sports1_Tamil_BTS/output/index.mpd",
+        "keyId": "d0d750ebd52b5756aa7fb833f61ceece",
+        "key": "4ae62a20c030c918aad24193c1dda229",
         "license": {
-            "cookie": "__hdnea=st=1760417405~exp=1760503805~acl=/*~hmac=b525ec4c77280de9e38b0d44c2319ad6e4ee6dc456e37ca0b13b8f36d1e7ba40",
+            "cookie": "__hdnea__=st=1761397230~exp=1761483630~acl=/*~hmac=9c2c1f2e9c9a3fc27acf8f8eac94bbdca40accbb9eb9a4e2e55e5a811d3dd8ea",
             "referer": "https://www.jiotv.com/",
             "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Mobile Safari/537.36"
         }
