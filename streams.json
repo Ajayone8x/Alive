@@ -24,11 +24,11 @@
         "key": "857bfaea3e7173bc3c63ce3749cabfcf",
         "poster": "https://via.placeholder.com/1280x720/010409/FFFFFF.png?text=PRIME+HINDI"
     },
-    "b2h":{
-        "name": "Bein sports",
-        "mpd": "https://mpdchecker.updatesbyrahul.site/output.php?url=https%3A%2F%2Fucdn.starhubgo.com%2Fbpk-tv%2FbeINSportsHD2%2Foutput%2Fmanifest.mpd",
-        "keyId": "9e9a4d58a8bb48019ec1589df652dd2b",
-        "key": "8b1ba8fdf2c1a141322cd18564973bd4",
+    "pl1":{
+        "name": "Premier league",
+        "mpd": "https://abizzcbaaaaaaaamlniubkrls2bb7.otte.live.cf.ww.aiv-cdn.net/fra-nitro/live/dash/enc/vwq77hfgzw/out/v1/b858e0b845c64cec953887bd4269e4ea/cenc.mpd",
+        "keyId": "1444f4235529f183f0a5a486befe9cdb",
+        "key": "e5e3fec67a1bb3472a2089c8a0a2557f",
         "poster": "https://via.placeholder.com/1280x720/010409/FFFFFF.png?text=WILLOW+BY+CRICBUZZ"
     },
     "willow": {
