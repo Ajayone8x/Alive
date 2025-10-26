@@ -31,6 +31,13 @@
         "key": "e5e3fec67a1bb3472a2089c8a0a2557f",
         "poster": "https://via.placeholder.com/1280x720/010409/FFFFFF.png?text=WILLOW+BY+CRICBUZZ"
     },
+    "bi2":{
+        "name": "bein sports 2hd",
+        "mpd": "https://aba5sdmaaaaaaaamdwujas5g6mg4r.otte.live.cf.ww.aiv-cdn.net/syd-nitro/live/clients/dash/enc/8m8cd46i1t/out/v1/83985c68e4174e90a58a1f2c024be4c9/cenc.mpd",
+        "keyId": "0b42be2664d7e811d04f3e504e0924c5",
+        "key": "ae24090123b8c72ac5404dc152847cb8",
+        "poster": "https://via.placeholder.com/1280x720/010409/FFFFFF.png?text=WILLOW+BY+CRICBUZZ"
+    },
     "willow": {
         "name": "Willow",
         "mpd": "https://ottb.live.cf.ww.aiv-cdn.net/bom-nitro/live/clients/dash/enc/f60kqesunw/out/v1/a435ed7a00f947deb4369b46d8f2fb70/cenc.mpd",
