@@ -71,15 +71,15 @@
         "keyId": "d0f2e5c39e70c18f29bf77768a1ad89a",
         "key": "d6853c51fcf37a18905f0609972395d7"
     },
-    "wcb": {
+    "wcbb": {
         "name": "willow by cricbuzz",
         "mpd": "https://cricketstan.github.io/Willow-Cricbuzz-/"
     },
     "fox-501": {
-        "id": "fox-501",
-        "name": "Fox Cricket 501",
+        "id": "wcb",
+        "name": "willow By cricbuzz",
         "type": "iframe",
-        "iframeSrc": "https://www.livereacting.com/tools/hls-player-embed?url=https://rumble.com/live-hls/6ykdxa/playlist.m3u8"
+        "iframeSrc": "https://cricketstan.github.io/Willow-Cricbuzz-/"
     },
     "ss1h": {
         "name": "Star Sports Hindi HD",
