@@ -73,9 +73,9 @@
     },
     "wcbb": {
         "name": "willow by cricbuzz",
-        "mpd": "https://cricketstan.github.io/Willow-Cricbuzz-/"
+        "iframeSrc": "https://cricketstan.github.io/Willow-Cricbuzz-/"
     },
-    "fox-501": {
+    "wcb": {
         "id": "wcb",
         "name": "willow By cricbuzz",
         "type": "iframe",
