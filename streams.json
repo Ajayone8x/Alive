@@ -6,7 +6,7 @@
         "key": "3049143af6bd768c4b07a9da27f55764",
         "poster": "https://mma.prnewswire.com/media/1919551/WillowTV_Logo.jpg?p=facebook"
     },
-        "foxh": {
+        "foffxh": {
         "name": "Foxhindi",
         "mpd": "https://hugh.cdn.rumble.cloud/live/u7gf26qm/slot-19/mifr-vsgy_720p/chunklist_DVR.m3u8"
     },
@@ -80,11 +80,11 @@
         "name": "willow by cricbuzz",
         "iframeSrc": "https://cricketstan.github.io/Willow-Cricbuzz-/"
     },
-    "wcb": {
-        "id": "wcb",
-        "name": "willow By cricbuzz",
+    "foxh": {
+        "id": "foxh",
+        "name": "Foxhindi",
         "type": "iframe",
-        "iframeSrc": "https://cricketstan.github.io/Willow-Cricbuzz-/"
+        "iframeSrc": "https://matcheslinks-eaa.pages.dev/foxsrc"
     },
     "ss1h": {
         "name": "Star Sports Hindi HD",
