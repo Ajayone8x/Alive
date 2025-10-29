@@ -6,9 +6,9 @@
         "key": "3049143af6bd768c4b07a9da27f55764",
         "poster": "https://mma.prnewswire.com/media/1919551/WillowTV_Logo.jpg?p=facebook"
     },
-    "hs": {
-        "name": "star sports2 hd",
-        "mpd": "https://live12p.hotstar.com/hls/live/2027118/inallow-iccwcwodi-2025/hin/1540051860/15mindvrm0120fd1a6b40f24f588202ce9bcb4f010412october2025/master_apm_720_4.m3u8"
+    "foxhindi": {
+        "name": "Foxhindi",
+        "mpd": "https://hugh.cdn.rumble.cloud/live/u7gf26qm/slot-19/mifr-vsgy_720p/chunklist_DVR.m3u8"
     },
     "shoq": {
         "name": "shoq",
