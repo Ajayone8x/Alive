@@ -6,10 +6,11 @@
         "key": "3049143af6bd768c4b07a9da27f55764",
         "poster": "https://mma.prnewswire.com/media/1919551/WillowTV_Logo.jpg?p=facebook"
     },
-    "foxhindi": {
+        "foxh": {
         "name": "Foxhindi",
         "mpd": "https://hugh.cdn.rumble.cloud/live/u7gf26qm/slot-19/mifr-vsgy_720p/chunklist_DVR.m3u8"
     },
+
     "shoq": {
         "name": "shoq",
         "mpd": "https://live.shoq.com.pk/live/eds/ICC_Women_World_Cup_2025/DASH/ICC_Women_World_Cup_2025.mpd",
