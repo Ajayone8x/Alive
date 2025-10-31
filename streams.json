@@ -1,23 +1,22 @@
 {
     "peng": {
         "name": "prime english",
-        "mpd":"https://ottb.live.cf.ww.aiv-cdn.net/sin-nitro/live/dash/enc/ebgsyorlcl/out/v1/ce95d81f287040d5a3fa6d4b145be849/cenc.mpd",
+        "mpd": "https://ottb.live.cf.ww.aiv-cdn.net/sin-nitro/live/dash/enc/ebgsyorlcl/out/v1/ce95d81f287040d5a3fa6d4b145be849/cenc.mpd",
         "keyId": "dd288719ddc43d1e5775fc42727fd9c9",
         "key": "3049143af6bd768c4b07a9da27f55764",
         "poster": "https://mma.prnewswire.com/media/1919551/WillowTV_Logo.jpg?p=facebook"
     },
-        "ssn": {
+    "ssn": {
         "name": "sky sports",
         "mpd": "https://lchdvideo.live/sky1nz.m3u8"
     },
     "fox-7": {
         "name": "fox",
-        "type":"iframe",
+        "type": "iframe",
         "iframeSrc": "https://nbvu.pages.dev/"
     },
-
     "shoq": {
-        "name":""
+        "name": "",
         "mpd": "https://live.shoq.com.pk/live/eds/ICC_Women_World_Cup_2025/DASH/ICC_Women_World_Cup_2025.mpd",
         "keyId": "a6dfc4f17d70d8d07639659193f03b25",
         "key": "893eacfabe386144b81733d622a7ad17",
@@ -30,14 +29,14 @@
         "key": "857bfaea3e7173bc3c63ce3749cabfcf",
         "poster": "https://via.placeholder.com/1280x720/010409/FFFFFF.png?text=PRIME+HINDI"
     },
-    "pl1":{
+    "pl1": {
         "name": "Premier league",
         "mpd": "https://abizzcbaaaaaaaamlniubkrls2bb7.otte.live.cf.ww.aiv-cdn.net/fra-nitro/live/dash/enc/vwq77hfgzw/out/v1/b858e0b845c64cec953887bd4269e4ea/cenc.mpd",
         "keyId": "1444f4235529f183f0a5a486befe9cdb",
         "key": "e5e3fec67a1bb3472a2089c8a0a2557f",
         "poster": "https://via.placeholder.com/1280x720/010409/FFFFFF.png?text=WILLOW+BY+CRICBUZZ"
     },
-    "bi2":{
+    "bi2": {
         "name": "bein sports 2hd",
         "mpd": "https://aba5sdmaaaaaaaamdwujas5g6mg4r.otte.live.cf.ww.aiv-cdn.net/syd-nitro/live/clients/dash/enc/8m8cd46i1t/out/v1/83985c68e4174e90a58a1f2c024be4c9/cenc.mpd",
         "keyId": "0b42be2664d7e811d04f3e504e0924c5",
@@ -121,17 +120,15 @@
         "type": "iframe",
         "iframeSrc": "https://sonydaimenew.akamaized.net/hls/live/2018457/engvsnz/ENG/std_mdh-800300010.m3u8?hdnea=exp=1760810764~acl=/*~id=21295569609916440035509981405415~hmac=529319f1bf269649f80155359dee736525941bd98efd05e1407fa61c56c49f00"
     },
-"hin-1":{
-      
-      "name": "Star Sports Hindi",
-      "type": "iframe",
-      "iframeSrc": "https://dillzycreations.github.io/Star-Sports-Hindi/"
+    "hin-1": {
+        "name": "Star Sports Hindi",
+        "type": "iframe",
+        "iframeSrc": "https://dillzycreations.github.io/Star-Sports-Hindi/"
     },
-  "eng-1": {
-      
-      "name": "Star Sports 1",
-      "type": "iframe",
-      "iframeSrc": "https://cricketstan.github.io/Channel-14/"
+    "eng-1": {
+        "name": "Star Sports 1",
+        "type": "iframe",
+        "iframeSrc": "https://cricketstan.github.io/Channel-14/"
     },
     "ss1e": {
         "name": "Star Sports English HD",
@@ -139,8 +136,7 @@
         "keyId": "965dc2ddb1d85138ad787999a7f30ca5",
         "key": "859695076e67fe961836b564db6d689c",
         "license": {
-            "cookie": "__hdnea__=st=1760825242~exp=1760911642~acl=/*~hmac=55fe33f63426814f19d191097411f64f6541981e4ff9f47988781994f2191b45"
-        ,
+            "cookie": "__hdnea__=st=1760825242~exp=1760911642~acl=/*~hmac=55fe33f63426814f19d191097411f64f6541981e4ff9f47988781994f2191b45",
             "referer": "https://www.jiotv.com/",
             "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Mobile Safari/537.36"
         }
