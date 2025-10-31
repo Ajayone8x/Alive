@@ -6,6 +6,11 @@
         "key": "3049143af6bd768c4b07a9da27f55764",
         "poster": "https://mma.prnewswire.com/media/1919551/WillowTV_Logo.jpg?p=facebook"
     },
+    "fox-507": {
+        "name": "fox",
+        "type": "iframe",
+        "iframeSrc": "https://nbvu.pages.dev/hin"
+    },
     "ssn": {
         "name": "sky sports",
         "type":"m3u8",
