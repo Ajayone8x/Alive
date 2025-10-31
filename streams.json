@@ -12,12 +12,12 @@
     },
     "fox-7": {
         "name": "fox",
-        "type":"m3u8",
-        "mpd": "https://hugh.cdn.rumble.cloud/live/u7gf26qm/slot-15/qiz6-ltf7_360p/chunklist.m3u8"
+        "type":"iframe",
+        "iframeSrc": "https://nbvu.pages.dev/"
     },
 
     "shoq": {
-        "name": "shoq",
+        "name":""
         "mpd": "https://live.shoq.com.pk/live/eds/ICC_Women_World_Cup_2025/DASH/ICC_Women_World_Cup_2025.mpd",
         "keyId": "a6dfc4f17d70d8d07639659193f03b25",
         "key": "893eacfabe386144b81733d622a7ad17",
