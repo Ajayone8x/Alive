@@ -14,12 +14,12 @@
     "ssn": {
         "name": "sky sports",
         "type":"m3u8",
-        "mpd": "https://lchdvideo.live/sky1nz.m3u8"
+        "mpd": "ht"
     },
-    "fox-7": {
-        "name": "fox",
+    "pkl": {
+        "name": "pkl",
         "type": "iframe",
-        "iframeSrc": "https://nbvu.pages.dev/"
+        "iframeSrc": "https://allinonereborn.online/spicetv-web/player.html?url=https%3A%2F%2Fallinonereborn.online%2Fspicetv-web%2Flive.php%3Fid%3D276731"
     },
     "shoq": {
         "name": "",
