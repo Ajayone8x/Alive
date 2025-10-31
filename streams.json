@@ -134,9 +134,9 @@
     },
     "ss1e": {
         "name": "Star Sports English HD",
-        "mpd": "https://jiotvpllive.cdn.jio.com/bpk-tv/Star_Sports1_BTS/output/index.mpd",
-        "keyId": "df20894ec30954d3b28097c138f4cfda",
-        "key": "ff9b6292b1cddbd11a046029cb314634",
+        "mpd": "https://jiotvpllive.cdn.jio.com/bpk-tv/Star_Sports_HD1_BTS/output/index.mpd",
+        "keyId": "965dc2ddb1d85138ad787999a7f30ca5",
+        "key": "859695076e67fe961836b564db6d689c",
         "license": {
             "cookie": "__hdnea__=st=1760825242~exp=1760911642~acl=/*~hmac=55fe33f63426814f19d191097411f64f6541981e4ff9f47988781994f2191b45"
         ,
