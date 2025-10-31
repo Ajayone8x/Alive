@@ -109,11 +109,11 @@
         "type": "iframe",
         "iframeSrc": "https://cricketstan.github.io/Fox-Cricket-/"
     },
-    "ios": {
-        "id": "ios",
-        "name": "Appel Wale",
-        "type": "iframe",
-        "iframeSrc": "https://cricketstan.github.io/ios/"
+    "fo": {
+        "id": "fo",
+        "name": "fox",
+        "type": "m3u8",
+        "mpd": "https://ipl.hypetg.fun/fox.m3u8"
     },
     "sl": {
         "name": "sonyliv",
