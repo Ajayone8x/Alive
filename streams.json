@@ -6,10 +6,10 @@
         "key": "80b53f92abc0865a244e8d68810fd4bb",
         "poster": "https://mma.prnewswire.com/media/1919551/WillowTV_Logo.jpg?p=facebook"
     },
-    "fox-507": {
-        "name": "fox",
-        "type": "iframe",
-        "iframeSrc": "https://nbvu.pages.dev/hin"
+    "sony": {
+        "name": "sony liv",
+        "type": "m3u8",
+        "mpd": "https://sonydaimenew.akamaized.net/hls/live/2018457/engvsnz/ENG/std_mdh-800300010.m3u8?hdnea=exp=1762010649~acl=/*~id=95294745861978231471113231710056~hmac=ade482939fa11b2f5115b5695f1b5f3d9a92f8018e99e5f262fadfe8b7f7944b"
     },
     "ssn": {
         "name": "sky sports",
