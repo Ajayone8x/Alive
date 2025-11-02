@@ -90,7 +90,7 @@
         "id": "fox-h",
         "name": "Foxhindi",
         "type": "m3u8",
-        "mpd": "https://foxstream.pages.dev/h.m3u8"
+        "mpd": "https://foxstream.pages.dev/hindi.m3u8"
     },
     "ss1h": {
         "name": "Star Sports Hindi HD",
@@ -107,7 +107,7 @@
         "id": "fox-e",
         "name": "Fox Cricket 501",
         "type": "m3u8",
-        "mpd": "https://foxstream.pages.dev/e.m3u8"
+        "mpd": "https://foxstream.pages.dev/eng.m3u8"
     },
     "foxh": {
         "id": "fox",
