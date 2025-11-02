@@ -106,8 +106,8 @@
     "fox": {
         "id": "fox-e",
         "name": "Fox Cricket 501",
-        "type": "iframe",
-        "iframeSrc": "https://foxstream.pages.dev/e.m3u8"
+        "type": "m3u8",
+        "mpd": "https://foxstream.pages.dev/e.m3u8"
     },
     "foxh": {
         "id": "fox",
