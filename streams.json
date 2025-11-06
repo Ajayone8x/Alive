@@ -6,10 +6,10 @@
         "key": "f24da67523e54d430d5811eafe6f4300",
         "poster": "https://mma.prnewswire.com/media/1919551/WillowTV_Logo.jpg?p=facebook"
     },
-    "sony": {
-        "name": "sony liv",
+    "astro": {
+        "name": "ASTRO",
         "type": "m3u8",
-        "mpd": "https://sonydaimenew.akamaized.net/hls/live/2018457/engvsnz/ENG/std_mdh-800300010.m3u8?hdnea=exp=1762010649~acl=/*~id=95294745861978231471113231710056~hmac=ade482939fa11b2f5115b5695f1b5f3d9a92f8018e99e5f262fadfe8b7f7944b"
+        "mpd": "https://smart.bengaldigital.live/AstroCricket/tracks-v1a1/mono.m3u8"
     },
     "ssn": {
         "name": "sky sports",
