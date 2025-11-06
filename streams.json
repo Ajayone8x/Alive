@@ -58,9 +58,9 @@
     },
     "tnt2": {
         "name": "Tnt 2",
-        "mpd": "https://ottb.live.cf.ww.aiv-cdn.net/sin-nitro/live/dash/enc/f0qvkrra8j/out/v1/f8fa17f087564f51aa4d5c700be43ec4/cenc.mpd",
-        "keyId": "0d9efa8287a52a2497a281f7a9012211",
-        "key": "e4f832d372943014fe5c30928a90e547",
+        "mpd": "https://ottb.live.cf.ww.aiv-cdn.net/lhr-nitro/live/dash/enc/f0qvkrra8j/out/v1/f8fa17f087564f51aa4d5c700be43ec4/cenc.mpd",
+        "keyId": "9f51f3dc6313ac8bc668e2d9d1c04dfa",
+        "key": "74bc63e5a193454a91ca494975db33f9",
         "poster": "https://via.placeholder.com/1280x720/010409/FFFFFF.png?text=TNT+2"
     },
     "tnt3": {
