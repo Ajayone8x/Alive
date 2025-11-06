@@ -90,7 +90,7 @@
         "id": "fox-h",
         "name": "Foxhindi",
         "type": "m3u8",
-        "mpd": "https://foxstream.pages.dev/hindi.m3u8"
+        "mpd": "https://rumble.com/live-hls/6z456e/playlist.m3u8"
     },
     "ss1h": {
         "name": "Star Sports Hindi HD",
