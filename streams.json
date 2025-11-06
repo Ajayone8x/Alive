@@ -84,13 +84,14 @@
     },
     "tnt1": {
         "name": "Tnt sports",
+        "type":"iframe",
         "iframeSrc": "https://prime-sooty-six.vercel.app/"
     },
     "fo": {
-        "id": "fox-h",
+       
         "name": "Foxhindi",
-        "type": "m3u8",
-        "mpd": "https://rumble.com/live-hls/6z456e/playlist.m3u8"
+        "type": "iframe",
+        "iframeSrc": "https://nbvu.pages.dev/hin"
     },
   
     "ss1h": {
