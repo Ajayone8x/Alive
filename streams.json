@@ -92,8 +92,7 @@
         "type":"iframe",
         "iframeSrc": "https://prime-sooty-six.vercel.app/"
     },
-    "Sky": {
-       
+    "sky": {
         "name": "Skysports",
         "type": "iframe",
         "iframeSrc": "https://sky-wheat.vercel.app/"
