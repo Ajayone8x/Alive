@@ -6,15 +6,15 @@
         "key": "9b5eaf2fe9a8cc752d64c41c92fa3dc6",
         "poster": "https://mma.prnewswire.com/media/1919551/WillowTV_Logo.jpg?p=facebook"
     },
-    "astro": {
+    "astro1": {
         "name": "ASTRO",
         "type": "m3u8",
         "mpd": "https://smart.bengaldigital.live/AstroCricket/tracks-v1a1/mono.m3u8"
     },
-    "ssn": {
-        "name": "sky sports",
-        "type":"m3u8",
-        "mpd": "ht"
+    "astro": {
+        "name": "astro",
+        "type":"iframe",
+        "iframeSrc": "https://astro-tau-seven.vercel.app/"
     },
     "fox": {
         "name": "Fox sports",
