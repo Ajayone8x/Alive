@@ -6,10 +6,10 @@
         "key": "7039b2570d5d429c7f4a7a4058ba5135",
         "poster": "https://mma.prnewswire.com/media/1919551/WillowTV_Logo.jpg?p=facebook"
     },
-    "astro1": {
-        "name": "ASTRO",
-        "type": "m3u8",
-        "mpd": "https://smart.bengaldigital.live/AstroCricket/tracks-v1a1/mono.m3u8"
+    "asia": {
+        "name": "ASIA",
+        "type": "iframe",
+        "iframeSrc": "https://allrounderlive.pages.dev/player?url=https://d3ssd0juqbxbw.cloudfront.net/mtvsinstlive/master.m3u8"
     },
     "astro": {
         "name": "astro",
