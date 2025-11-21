@@ -6,6 +6,13 @@
         "key": "7039b2570d5d429c7f4a7a4058ba5135",
         "poster": "https://mma.prnewswire.com/media/1919551/WillowTV_Logo.jpg?p=facebook"
     },
+    "wcb": {
+        "name": "willow by cricbuzz",
+        "mpd": "https://abmyxykaaaaaaaamkyvb65fuqebyg.7a77200bf98444ac997a89ed83775793.emt.cf.ww.aiv-cdn.net/iad-nitro/live/dash/enc/3vexfm2n2o/out/v1/60518e19ea6e47c3a800aa9ce114242b/cenc.mpd",
+        "keyId": "d9212e1a16d13436a48c3c26c7586ba2",
+        "key": "36d31124d5fbeffb1827daf7e9a4b48d",
+        "poster": "https://mma.prnewswire.com/media/1919551/WillowTV_Logo.jpg?p=facebook"
+    },
     "asia": {
         "name": "ASIA",
         "type": "iframe",
