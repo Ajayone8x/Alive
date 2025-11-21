@@ -105,24 +105,9 @@
             "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Mobile Safari/537.36"
         }
     },
-    "fox": {
-        "id": "fox-e",
-        "name": "Fox Cricket 501",
-        "type": "m3u8",
-        "mpd": "https://foxstream.pages.dev/eng.m3u8"
-    },
-    "foxh": {
-        "id": "fox",
-        "name": "Fox Cricket 501",
-        "type": "iframe",
-        "iframeSrc": "https://nbvu.pages.dev/hin"
-    },
-    "foxe": {
-        "id": "foe",
-        "name": "fox",
-        "type": "m3u8",
-        "mpd": "https://nbvu.pages.dev/"
-    },
+
+    
+
     "sl": {
         "name": "sonyliv",
         "type": "iframe",
