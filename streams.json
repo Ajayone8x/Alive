@@ -97,10 +97,10 @@
         "keyId": "d0f2e5c39e70c18f29bf77768a1ad89a",
         "key": "d6853c51fcf37a18905f0609972395d7"
     },
-    "tnt12": {
-        "name": "Tnt sports",
+    "ch7": {
+        "name": "7 sports",
         "type":"iframe",
-        "iframeSrc": "https://prime-sooty-six.vercel.app/"
+        "iframeSrc": "https://allrounderlive.pages.dev/player?url=https://hugh.cdn.rumble.cloud/live/4gf18j5s/slot-41/teed-wyvn_360p/chunklist.m3u8"
     },
     "sky": {
         "name": "Skysports",
