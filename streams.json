@@ -41,7 +41,7 @@
     "fox": {
         "name": "Fox sports",
         "type": "iframe",
-        "iframeSrc": "https://fox-cricket.vercel.app/"
+        "iframeSrc": "https://cricketstan.github.io/Fox-Cricket-/"
     },
     "shoq": {
         "name": "",
