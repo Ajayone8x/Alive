@@ -13,10 +13,10 @@
         "key": "36d31124d5fbeffb1827daf7e9a4b48d",
         "poster": "https://mma.prnewswire.com/media/1919551/WillowTV_Logo.jpg?p=facebook"
     },
-    "asia": {
-        "name": "ASIA",
+    "ss2": {
+        "name": "Star sports 2 HD",
         "type": "iframe",
-        "iframeSrc": "https://allrounderlive.pages.dev/player?url=https://d3ssd0juqbxbw.cloudfront.net/mtvsinstlive/master.m3u8"
+        "iframeSrc": "https://ss2hd-theta.vercel.app/"
     },
     "astro": {
         "name": "astro",
