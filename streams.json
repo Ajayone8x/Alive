@@ -28,10 +28,10 @@
         "type":"iframe",
         "iframeSrc": "https://allrounderlive.pages.dev/player?url=https://mini.allinonereborn.fun/jiotv-in4/app/ts_live_1984.m3u8"
     },
-       "wc": {
+       "dd": {
         "name": "Willow",
-        "type":"iframe",
-        "iframeSrc": "https://cricketstan.github.io/Willow-Cricbuzz-/"
+        "type":"mpd",
+        "mpd": "https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/b17adfe543354fdd8d189b110617cddd/index_6.m3u8"
     },
         "ios": {
         "name": "Willow",
