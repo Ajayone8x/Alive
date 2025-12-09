@@ -2,15 +2,15 @@
     "peng": {
         "name": "prime english",
         "mpd": "https://aba3uy3aaaaaaaamfjv2jyrjdxcj4.otte.live.cf.ww.aiv-cdn.net/sin-nitro/live/dash/enc/1xsggbtjku/out/v1/bfd93216daf6417298bfcc7d3015d823/cenc.mpd",
-        "keyId": "2f5ed0dd0a0ca671dee3948dbbe023d4",
-        "key": "7039b2570d5d429c7f4a7a4058ba5135",
+        "keyId": "620e51b82596475517a27aa425c52280",
+        "key": "2b9ba811e9c5aeafc8ae1b71cdca4d6a",
         "poster": "https://mma.prnewswire.com/media/1919551/WillowTV_Logo.jpg?p=facebook"
     },
-    "wcb": {
-        "name": "willow by cricbuzz",
-        "mpd": "https://abmyxykaaaaaaaamkyvb65fuqebyg.7a77200bf98444ac997a89ed83775793.emt.cf.ww.aiv-cdn.net/iad-nitro/live/dash/enc/3vexfm2n2o/out/v1/60518e19ea6e47c3a800aa9ce114242b/cenc.mpd",
-        "keyId": "d9212e1a16d13436a48c3c26c7586ba2",
-        "key": "36d31124d5fbeffb1827daf7e9a4b48d",
+    "laliga": {
+        "name": "Laliga Tv",
+        "mpd": "https://abclxdjaaaaaaaamkqb6y4p6ie2zk.ottb.live.cf.ww.aiv-cdn.net/dub-nitro/live/clients/dash/enc/k0duzgfejg/out/v1/70a50b1bda944628b8e7e66ab4069419/cenc.mpd",
+        "keyId": "620e51b82596475517a27aa425c52280",
+        "key": "2b9ba811e9c5aeafc8ae1b71cdca4d6a",
         "poster": "https://mma.prnewswire.com/media/1919551/WillowTV_Logo.jpg?p=facebook"
     },
     "ss2": {
