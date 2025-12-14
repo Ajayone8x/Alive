@@ -82,7 +82,7 @@
         "ep": {
         "name": "Ajayxlive",
         "type":"iframe",
-        "iframeSrc": "https://allrounderlive.pages.dev/player?url=https://rumble.com/live-hls/70qftg/playlist.m3u8?"
+        "iframeSrc": "https://allrounderlive.pages.dev/player?url=https://rumble.com/live-hls-dvr/70t07k/playlist.m3u8?"
     },
     "s2h": {
         "name": "Hindi",
