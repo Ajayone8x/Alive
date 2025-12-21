@@ -89,6 +89,11 @@
         "type": "iframe",
         "iframeSrc": "https://s-whindi.vercel.app/"
     },
+    "t1": {
+        "name": "Hindi",
+        "type": "iframe",
+        "iframeSrc": "https://allinonereborn.online/sony/ptest.php?id=sony-ten-1-hd"
+    },
     "shoq": {
         "name": "",
         "mpd": "https://live2.shoq.com.pk/live/eds/ICC_Women_World_Cup_2025/DASH/ICC_Women_World_Cup_2025.mpd",
