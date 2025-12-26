@@ -15,42 +15,42 @@
     },
     "skyfb": {
         "name": "AjayxL!ve",
-        "type":"iframe",
+        "type": "iframe",
         "iframeSrc": "https://football-lime-mu.vercel.app/"
     },
-      "tnt2hd": {
+    "tnt2hd": {
         "name": "AjayxL!ve",
-        "type":"iframe",
+        "type": "iframe",
         "iframeSrc": "https://tntsports-c1c.pages.dev/tnt2fhd"
     },
-       "tnt1hd": {
+    "tnt1hd": {
         "name": "AjayxL!ve",
-        "type":"iframe",
+        "type": "iframe",
         "iframeSrc": "https://tntsports-c1c.pages.dev/"
     },
-      "tnt3hd": {
+    "tnt3hd": {
         "name": "AjayxL!ve",
-        "type":"iframe",
+        "type": "iframe",
         "iframeSrc": "https://tntsports-c1c.pages.dev/tnt3hd"
-      },
-      "tnt4hd": {
+    },
+    "tnt4hd": {
         "name": "AjayxL!ve",
-        "type":"iframe",
+        "type": "iframe",
         "iframeSrc": "https://tntsports-c1c.pages.dev/tnt4hd"
-      },
-"espn": {
+    },
+    "espn": {
         "name": "AjayxL!ve",
-        "type":"iframe",
+        "type": "iframe",
         "iframeSrc": "https://football-5wq.pages.dev/espn"
     },
     "cbs": {
         "name": "AjayxL!ve",
-        "type":"iframe",
+        "type": "iframe",
         "iframeSrc": "https://football-5wq.pages.dev/cbs"
     },
-"espn2": {
+    "espn2": {
         "name": "AjayxL!ve",
-        "type":"iframe",
+        "type": "iframe",
         "iframeSrc": "https://football-5wq.pages.dev/espn2"
     },
     "espn3": {
@@ -66,7 +66,7 @@
     "pr": {
         "name": "AjayxL!ve",
         "type": "iframe",
-        "iframeSrc":"https://tt-iota-six.vercel.app/"
+        "iframeSrc": "https://tt-iota-six.vercel.app/"
     },
     "sportv": {
         "name": "AjayxL!ve",
@@ -78,7 +78,6 @@
         "type": "iframe",
         "iframeSrc": "https://football-5wq.pages.dev/laliga"
     },
-
     "ss2": {
         "name": "Star sports 2 HD",
         "type": "iframe",
@@ -86,22 +85,22 @@
     },
     "hot": {
         "name": "Messi",
-        "type":"iframe",
+        "type": "iframe",
         "iframeSrc": "https://dillzy.cricketstream745.workers.dev/live.m3u8"
     },
-   "slf": {
+    "slf": {
         "name": "Messi",
-        "type":"m3u8",
-        "mpd": "https://rumble.com/live-hls/71aao4/playlist.m3u8?"
+        "type": "m3u8",
+        "m3u8": "https://rumble.com/live-hls/71aao4/playlist.m3u8"
     },
-       "fox501": {
+    "fox501": {
         "name": "ajayxlive",
-        "type":"iframe",
+        "type": "iframe",
         "iframeSrc": "https://allrounderlive.pages.dev/dilz?id=dillzy45"
     },
-        "tvz": {
+    "tvz": {
         "name": "Ajayxlive",
-        "type":"iframe",
+        "type": "iframe",
         "iframeSrc": "https://allrounderlive.pages.dev/player?url=https://use22.playlist.live-video.net/v1/playlist/CrgFwNCsGQmy_eNLngE7II36h8hu4TmBjHEGuAiadb5fbF65vH_5c1Raw7avBb57-948Av4RcxAlozcERMr-UElvLo4F5IpGbqHOvIyy84MpSHKLSuaMyy4EvGun61JiK_YA8UsAmNx0Ls1k6oNHU4yLSTX__Q24USDMK8dZTkmySBGCppwxoKpxozBF660K30ZAY8UE1Q2toD8mC9EGQ4SKL3b6wUMjtRNDDF_LxesPoC0XVTttuxN4cxfiySY76T9AkZbE-NXmj_jDBdR_tvkPryGlQBGKkIlRjw8gbsPeA7fA8e2TfhXY4vnp-tO6Pz5XvBWqioUXqydOLO70frjPQgQ1F7OFrDB_MRTZ5ORC1JHFtHltVq0I0JNKCMc7bytMql2wDpz4kX7EGG3X1Kiwu515UbwvDOKb3oAk5A9xTQ7fTjdFBVamg1MIbqOt7zpthifmx4NtaeqY2Fvbk64G9uQSvlsPWNHwGBnYdjWtoFi4xxuAlTrd6YiMqniGdDOCr8NXYrGe-CPbqPWoJHS3xKhQdezb4VHa761aerVAb7e5LIsjL-FaxnV9wpJPkbJximWDBOBJ13EzRSJ-6UlFMQURrRK0L7WzMhYCtXKM-E2HR2mRFQnFWtWjJVF_c2qWzvzdPdgV_BVJJwnClWPbmaz0QwL-fRtBvJ4Y0teBdNVrOYJ4V0WhL7HCSn67LGHP0u56uLvpgpwV_jIn7eF-DWigcFI7_STtrN797QPKU96rQ5JQPMifD12IFcwENerV5MH0mjoZ2fSJVLNWmU4zvEF_3RYi04oM3oO-wDOs_JfY5zllhJLodgPtMDbydFPbiU-hbAohVnSbNunJnv4xfUZM2q14gDl5pyxaFPd2MgTlewj-j8wsOzVWRbf9bNzR6tbbPspGMoKDceQRpXpIA1ndU60EOJSRGgyCwVa_rE9tfEXUjK0gASoJdXMtd2VzdC0yMIMO.m3u8"
     },
     "s2h": {
@@ -115,7 +114,7 @@
         "iframeSrc": "https://allinonereborn.online/sony/ptest.php?id=sony-ten-1-hd"
     },
     "shoq": {
-        "name": "",
+        "name": "Shoq Sports",
         "mpd": "https://live2.shoq.com.pk/live/eds/ICC_Women_World_Cup_2025/DASH/ICC_Women_World_Cup_2025.mpd",
         "keyId": "a6dfc4f17d70d8d07639659193f03b25",
         "key": "893eacfabe386144b81733d622a7ad17",
@@ -144,7 +143,7 @@
     },
     "willow": {
         "name": "Willow",
-       "mpd": "https://ottb.live.cf.ww.aiv-cdn.net/bom-nitro/live/clients/dash/enc/f60kqesunw/out/v1/a435ed7a00f947deb4369b46d8f2fb70/cenc.mpd",
+        "mpd": "https://ottb.live.cf.ww.aiv-cdn.net/bom-nitro/live/clients/dash/enc/f60kqesunw/out/v1/a435ed7a00f947deb4369b46d8f2fb70/cenc.mpd",
         "keyId": "1779c27b9d077a3ba0c9cc1bb9a94b9f",
         "key": "cc5cf3b7928fb9e0a1ee6a8b566f0a8e",
         "poster": "https://via.placeholder.com/1280x720/010409/FFFFFF.png?text=WILLOW"
@@ -177,7 +176,7 @@
     },
     "ilt20": {
         "name": "AjayxL!ve",
-        "type":"iframe",
+        "type": "iframe",
         "iframeSrc": "https://zee-seven.vercel.app/"
     },
     "sh1": {
@@ -185,7 +184,6 @@
         "type": "iframe",
         "iframeSrc": "https://star-sports-ten.vercel.app/"
     },
-  
     "ss1h": {
         "name": "Star Sports Hindi HD",
         "mpd": "https://jiotvmblive.cdn.jio.com/bpk-tv/Star_Sports_HD1_BTS/output/index.mpd",
@@ -197,9 +195,6 @@
             "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Mobile Safari/537.36"
         }
     },
-
-    
-
     "sl": {
         "name": "sonyliv",
         "type": "iframe",
@@ -211,7 +206,7 @@
         "iframeSrc": "https://dillzycreations.github.io/Star-Sports-Hindi/"
     },
     "fox": {
-        "name": "Fox Sports ",
+        "name": "Fox Sports",
         "type": "iframe",
         "iframeSrc": "https://allrounderlive.pages.dev/player2?url=https://dillzy.cricketstream745.workers.dev/live.m3u8"
     },
@@ -270,13 +265,12 @@
             "userAgent": "plaYtv/7.1.5 (Linux;Android 13) ExoPlayerLib/2.11.6"
         }
     },
-    {
-  "fox1": {
-    "name": "Ajay",
-    "type": "player",
-    "playerType": "plyr",
-    "m3u8": "https://dillzy.cricketstream745.workers.dev/live.m3u8"
-  },
+    "fox1": {
+        "name": "Ajay",
+        "type": "player",
+        "playerType": "plyr",
+        "m3u8": "https://dillzy.cricketstream745.workers.dev/live.m3u8"
+    },
     "ss1kan": {
         "name": "Star Sports1 kannada HD",
         "mpd": "https://jiotvpllive.cdn.jio.com/bpk-tv/Star_Sports2_Kannada_BTS/output/index.mpd",
