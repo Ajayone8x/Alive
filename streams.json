@@ -270,6 +270,13 @@
             "userAgent": "plaYtv/7.1.5 (Linux;Android 13) ExoPlayerLib/2.11.6"
         }
     },
+    {
+  "fox1": {
+    "name": "Ajay",
+    "type": "player",
+    "playerType": "plyr",
+    "m3u8": "https://dillzy.cricketstream745.workers.dev/live.m3u8"
+  },
     "ss1kan": {
         "name": "Star Sports1 kannada HD",
         "mpd": "https://jiotvpllive.cdn.jio.com/bpk-tv/Star_Sports2_Kannada_BTS/output/index.mpd",
