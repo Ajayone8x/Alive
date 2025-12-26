@@ -387,7 +387,12 @@
                         renderPlayerUI(streamData);
                         
                         // Initialize player based on playerType in JSON
-                        const playerType = streamData.playerType || 'shaka';
+                        let playerType = streamData.playerType || 'shaka';
+                        
+                        // Auto-detect player type for m3u8 if not specified
+                        if (streamData.type === 'm3u8' && !streamData.playerType) {
+                            playerType = 'plyr'; // Default to Plyr for m3u8
+                        }
                         
                         if (playerType === 'plyr') {
                             initPlyrPlayer(streamData);
@@ -642,6 +647,13 @@
             const video = document.getElementById('video-player');
             if (!video) return;
 
+            const streamUrl = data.m3u8 || data.mpd;
+            
+            // For HLS (m3u8), use native video player with Plyr UI
+            if (data.m3u8) {
+                video.src = streamUrl;
+            }
+
             // Initialize Plyr
             const player = new Plyr(video, {
                 controls: ['play-large', 'play', 'progress', 'current-time', 'mute', 'volume', 'captions', 'settings', 'pip', 'airplay', 'fullscreen'],
@@ -652,14 +664,16 @@
                 speed: { selected: 1, options: [0.5, 0.75, 1, 1.25, 1.5, 2] }
             });
 
-            // Set source
-            player.source = {
-                type: 'video',
-                sources: [{
-                    src: data.mpd || data.m3u8,
-                    type: data.mpd ? 'video/mp4' : 'application/x-mpegURL'
-                }]
-            };
+            // Set source for non-HLS streams
+            if (!data.m3u8) {
+                player.source = {
+                    type: 'video',
+                    sources: [{
+                        src: streamUrl,
+                        type: 'video/mp4'
+                    }]
+                };
+            }
 
             // Enable autoplay
             player.on('ready', () => {
@@ -694,9 +708,12 @@
             // Initialize JWPlayer
             const player = jwplayer('jwplayer-container');
             
+            const streamUrl = data.m3u8 || data.mpd;
+            const streamType = data.m3u8 ? 'hls' : 'dash';
+            
             player.setup({
-                file: data.mpd || data.m3u8,
-                type: data.mpd ? 'dash' : 'hls',
+                file: streamUrl,
+                type: streamType,
                 width: '100%',
                 height: '100%',
                 autostart: true,
