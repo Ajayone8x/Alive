@@ -1,9 +1,9 @@
 {
     "w2": {
         "name": "BBL",
-        "mpd": "https://otte.live.cf.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/x7v11cgv4q/out/v1/364091c745634b718b49f0874503aef7/cenc.mpd",
-        "keyId": "d90520d36b7cef1714c4485d0f424dba",
-        "key": "6028971fdaba8d7f45bf6e3f88438cd0",
+        "mpd": "https://a166aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/clients/dash/enc/mu0a3ytyw0/out/v1/5de8cf540b16463fbebb6aa6999f9f14/cenc.mpd",
+        "keyId": "e8fc994123211108f5ecc7709ff49409",
+        "key": "eb33c8f6e0c67f1c93fbb655a2def36f",
         "poster": "https://mma.prnewswire.com/media/1919551/WillowTV_Logo.jpg?p=facebook"
     },
     "laligatv": {
