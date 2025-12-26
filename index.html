@@ -10,6 +10,13 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.11/shaka-player.ui.min.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.11/controls.min.css" crossorigin="anonymous">
+    
+    <!-- Plyr Player -->
+    <script src="https://cdn.plyr.io/3.7.8/plyr.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" crossorigin="anonymous">
+    
+    <!-- JWPlayer -->
+    <script src="https://cdn.jwplayer.com/libraries/KB5zFt7A.js" crossorigin="anonymous"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -378,7 +385,17 @@
                         renderIframeUI(streamData);
                     } else {
                         renderPlayerUI(streamData);
-                        initShakaPlayer(streamData);
+                        
+                        // Initialize player based on playerType in JSON
+                        const playerType = streamData.playerType || 'shaka';
+                        
+                        if (playerType === 'plyr') {
+                            initPlyrPlayer(streamData);
+                        } else if (playerType === 'jwplayer') {
+                            initJWPlayer(streamData);
+                        } else {
+                            initShakaPlayer(streamData);
+                        }
                     }
 
                     setTimeout(() => { document.getElementById('telegramPopup').style.display = 'block'; }, 2500); 
@@ -433,8 +450,8 @@
                     <span class="live-badge"><i class="fa-solid fa-circle"></i> LIVE NOW</span>
                 </div>
                 
-                <div id="player-container" data-shaka-player-container>
-                    <video id="video-player" style="width:100%;height:100%;" autoplay playsinline preload="auto" data-shaka-player></video>
+                <div id="player-container">
+                    <video id="video-player" style="width:100%;height:100%;" autoplay playsinline preload="auto" controls></video>
                 </div>
 
                 <div class="grid-panels">
@@ -495,15 +512,35 @@
                 drm: drmConfig,
                 streaming: {
                     lowLatencyMode: true,
-                    bufferingGoal: 15,
-                    rebufferingGoal: 2,
-                    bufferBehind: 15,
-                    retryParameters: { timeout: 10000, maxAttempts: 5, baseDelay: 300, backoffFactor: 1.2 },
-                    segmentRequestTimeout: 8000,
-                    segmentPrefetchLimit: 2,
-                    useNativeHlsOnSafari: true
+                    bufferingGoal: 5,           // Reduced from 15 to 5 seconds
+                    rebufferingGoal: 1,         // Reduced from 2 to 1 second
+                    bufferBehind: 10,           // Reduced from 15 to 10 seconds
+                    retryParameters: { timeout: 5000, maxAttempts: 4, baseDelay: 200, backoffFactor: 1.5 },
+                    segmentRequestTimeout: 5000, // Reduced from 8000 to 5000
+                    segmentPrefetchLimit: 3,     // Increased from 2 to 3 for faster loading
+                    useNativeHlsOnSafari: true,
+                    stallEnabled: true,
+                    stallThreshold: 1,           // Detect stalls quickly
+                    stallSkip: 0.1,
+                    jumpLargeGaps: true,         // Skip large buffering gaps
+                    smallGapLimit: 0.5,
+                    ignoreTextStreamFailures: true,
+                    alwaysStreamText: false,
+                    startAtSegmentBoundary: false,
+                    infiniteRetriesForLiveStreams: true
                 },
-                manifest: { retryParameters: { timeout: 8000, maxAttempts: 3 } }
+                manifest: { 
+                    retryParameters: { timeout: 5000, maxAttempts: 4 },
+                    defaultPresentationDelay: 3,  // Lower delay for faster start
+                    availabilityWindowOverride: 60
+                },
+                abr: {
+                    enabled: true,
+                    switchInterval: 4,            // Faster quality adaptation
+                    bandwidthUpgradeTarget: 0.85,
+                    bandwidthDowngradeTarget: 0.90,
+                    defaultBandwidthEstimate: 5000000 // Start with higher quality assumption
+                }
             });
 
             if (license) {
@@ -528,17 +565,27 @@
             const enableAutoplay = () => {
                 video.setAttribute('autoplay', '');
                 video.setAttribute('playsinline', '');
+                video.setAttribute('muted', '');
                 video.autoplay = true;
+                video.muted = true; // Start muted for better autoplay compatibility
             };
 
             const attemptAutoplay = async () => {
                 try {
-                    video.muted = false;
+                    // First attempt with muted for better browser compatibility
+                    video.muted = true;
                     await video.play();
+                    // Unmute after successful autoplay
+                    setTimeout(() => {
+                        video.muted = false;
+                        video.volume = 0.8;
+                    }, 500);
                     return true;
                 } catch (error) {
+                    console.warn('Autoplay failed:', error);
                     try {
-                        video.muted = true;
+                        // Retry after small delay
+                        await new Promise(resolve => setTimeout(resolve, 300));
                         await video.play();
                         return true;
                     } catch {
@@ -565,11 +612,22 @@
             try {
                 enableAutoplay();
                 await player.load(streamUrl);
+                
+                // Multiple autoplay attempts for better reliability
                 if (video.readyState >= 3) {
                     await attemptAutoplay();
                 } else {
-                    video.addEventListener('canplay', attemptAutoplay, { once: true });
-                    setTimeout(async () => { if (video.paused) await attemptAutoplay(); }, 2000);
+                    video.addEventListener('canplay', async () => {
+                        await attemptAutoplay();
+                    }, { once: true });
+                    
+                    // Additional fallback attempts
+                    setTimeout(async () => { 
+                        if (video.paused) await attemptAutoplay(); 
+                    }, 1000);
+                    setTimeout(async () => { 
+                        if (video.paused) await attemptAutoplay(); 
+                    }, 2500);
                 }
             } catch (error) {
                 console.error('Load error:', error);
@@ -577,6 +635,109 @@
             
             document.addEventListener('visibilitychange', () => {
                 if (!document.hidden && video.paused) attemptAutoplay();
+            });
+        }
+
+        async function initPlyrPlayer(data) {
+            const video = document.getElementById('video-player');
+            if (!video) return;
+
+            // Initialize Plyr
+            const player = new Plyr(video, {
+                controls: ['play-large', 'play', 'progress', 'current-time', 'mute', 'volume', 'captions', 'settings', 'pip', 'airplay', 'fullscreen'],
+                autoplay: true,
+                muted: true,
+                storage: { enabled: true, key: 'plyr' },
+                quality: { default: 720, options: [1080, 720, 480, 360] },
+                speed: { selected: 1, options: [0.5, 0.75, 1, 1.25, 1.5, 2] }
+            });
+
+            // Set source
+            player.source = {
+                type: 'video',
+                sources: [{
+                    src: data.mpd || data.m3u8,
+                    type: data.mpd ? 'video/mp4' : 'application/x-mpegURL'
+                }]
+            };
+
+            // Enable autoplay
+            player.on('ready', () => {
+                player.play().then(() => {
+                    setTimeout(() => {
+                        player.muted = false;
+                        player.volume = 0.8;
+                    }, 500);
+                }).catch(err => console.warn('Plyr autoplay failed:', err));
+            });
+
+            // Unmute on user interaction
+            let hasInteracted = false;
+            const unmute = () => {
+                if (!hasInteracted) {
+                    player.muted = false;
+                    hasInteracted = true;
+                }
+            };
+            ['click', 'touchstart'].forEach(event => {
+                document.addEventListener(event, unmute, { once: true });
+            });
+        }
+
+        async function initJWPlayer(data) {
+            const container = document.getElementById('player-container');
+            if (!container) return;
+
+            // Clear container and set id for JWPlayer
+            container.innerHTML = '<div id="jwplayer-container"></div>';
+
+            // Initialize JWPlayer
+            const player = jwplayer('jwplayer-container');
+            
+            player.setup({
+                file: data.mpd || data.m3u8,
+                type: data.mpd ? 'dash' : 'hls',
+                width: '100%',
+                height: '100%',
+                autostart: true,
+                mute: true,
+                controls: true,
+                primary: 'html5',
+                hlshtml: true,
+                stretching: 'uniform',
+                preload: 'auto',
+                liveSyncDuration: 5,
+                aspectratio: '16:9',
+                playbackRateControls: true,
+                cast: {},
+                sharing: {
+                    sites: ['facebook', 'twitter', 'email']
+                }
+            });
+
+            // Enable autoplay and unmute
+            player.on('ready', () => {
+                player.play();
+                setTimeout(() => {
+                    player.setMute(false);
+                    player.setVolume(80);
+                }, 500);
+            });
+
+            // Unmute on user interaction
+            let hasInteracted = false;
+            const unmute = () => {
+                if (!hasInteracted && player.getMute()) {
+                    player.setMute(false);
+                    hasInteracted = true;
+                }
+            };
+            ['click', 'touchstart'].forEach(event => {
+                document.addEventListener(event, unmute, { once: true });
+            });
+
+            player.on('error', (error) => {
+                console.error('JWPlayer Error:', error);
             });
         }
 
