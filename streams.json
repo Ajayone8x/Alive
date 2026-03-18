@@ -183,7 +183,7 @@
         "name": "Starsports",
         "type": "iframe",
         "iframeSrc": "https://star-sports-ten.vercel.app/"
-    },
+    }
     
     
 }
