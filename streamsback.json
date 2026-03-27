@@ -1,0 +1,189 @@
+{
+    "w2": {
+        "name": "BBL",
+        "mpd": "https://a166aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/clients/dash/enc/mu0a3ytyw0/out/v1/5de8cf540b16463fbebb6aa6999f9f14/cenc.mpd",
+        "keyId": "e8fc994123211108f5ecc7709ff49409",
+        "key": "eb33c8f6e0c67f1c93fbb655a2def36f",
+        "poster": "https://mma.prnewswire.com/media/1919551/WillowTV_Logo.jpg?p=facebook"
+    },
+    "laligatv": {
+        "name": "Laliga Tv",
+        "mpd": "https://abclxdjaaaaaaaamkqb6y4p6ie2zk.ottb.live.cf.ww.aiv-cdn.net/dub-nitro/live/clients/dash/enc/k0duzgfejg/out/v1/70a50b1bda944628b8e7e66ab4069419/cenc.mpd",
+        "keyId": "620e51b82596475517a27aa425c52280",
+        "key": "2b9ba811e9c5aeafc8ae1b71cdca4d6a",
+        "poster": "https://mma.prnewswire.com/media/1919551/WillowTV_Logo.jpg?p=facebook"
+    },
+    "skyfb": {
+        "name": "AjayxL!ve",
+        "type": "iframe",
+        "iframeSrc": "https://football-lime-mu.vercel.app/"
+    },
+    "tnt2hd": {
+        "name": "AjayxL!ve",
+        "type": "iframe",
+        "iframeSrc": "https://tntsports-c1c.pages.dev/tnt2fhd"
+    },
+    "tnt1hd": {
+        "name": "AjayxL!ve",
+        "type": "iframe",
+        "iframeSrc": "https://tntsports-c1c.pages.dev/"
+    },
+    "tnt3hd": {
+        "name": "AjayxL!ve",
+        "type": "iframe",
+        "iframeSrc": "https://tntsports-c1c.pages.dev/tnt3hd"
+    },
+    "tnt4hd": {
+        "name": "AjayxL!ve",
+        "type": "iframe",
+        "iframeSrc": "https://tntsports-c1c.pages.dev/tnt4hd"
+    },
+    "hots": {
+        "name": "One8chirag",
+        "type": "iframe",
+        "iframeSrc": "https://allrounderlive.pages.dev/dilz?id=dillzy645"
+    },
+    "cbs": {
+        "name": "one8chirag",
+        "type": "iframe",
+        "iframeSrc": "https://allrounderlive.pages.dev/dilz?id=65656576"
+    },
+    "jhs": {
+        "name": "one8chirag",
+        "type": "iframe",
+        "iframeSrc": "https://allrounderlive.pages.dev/dilz?id=dillzy645"
+    },
+    "espn3": {
+        "name": "AjayxL!ve",
+        "type": "iframe",
+        "iframeSrc": "https://football-5wq.pages.dev/espn3"
+    },
+    "espn4": {
+        "name": "AjayxL!ve",
+        "type": "iframe",
+        "iframeSrc": "https://football-5wq.pages.dev/espn4"
+    },
+    "pr": {
+        "name": "AjayxL!ve",
+        "type": "iframe",
+        "iframeSrc": "https://tt-iota-six.vercel.app/"
+    },
+    "sportv": {
+        "name": "AjayxL!ve",
+        "type": "iframe",
+        "iframeSrc": "https://football-5wq.pages.dev/sportv"
+    },
+    "laliga": {
+        "name": "AjayxL!ve",
+        "type": "iframe",
+        "iframeSrc": "https://football-5wq.pages.dev/laliga"
+    },
+    "ss2": {
+        "name": "Star sports 2 HD",
+        "type": "iframe",
+        "iframeSrc": "https://ss2hd-theta.vercel.app/"
+    },
+    "hot": {
+        "name": "Messi",
+        "type": "iframe",
+        "iframeSrc": "https://dillzy.cricketstream745.workers.dev/live.m3u8"
+    },
+    "slf": {
+        "name": "Messi",
+        "type": "m3u8",
+        "m3u8": "https://rumble.com/live-hls/71aao4/playlist.m3u8"
+    },
+    "fox501": {
+        "name": "ajayxlive",
+        "type": "iframe",
+        "iframeSrc": "https://allrounderlive.pages.dev/dilz?id=dillzy45"
+    },
+    "tvz": {
+        "name": "Ajayxlive",
+        "type": "iframe",
+        "iframeSrc": "https://allrounderlive.pages.dev/player?url=https://use22.playlist.live-video.net/v1/playlist/CrgFwNCsGQmy_eNLngE7II36h8hu4TmBjHEGuAiadb5fbF65vH_5c1Raw7avBb57-948Av4RcxAlozcERMr-UElvLo4F5IpGbqHOvIyy84MpSHKLSuaMyy4EvGun61JiK_YA8UsAmNx0Ls1k6oNHU4yLSTX__Q24USDMK8dZTkmySBGCppwxoKpxozBF660K30ZAY8UE1Q2toD8mC9EGQ4SKL3b6wUMjtRNDDF_LxesPoC0XVTttuxN4cxfiySY76T9AkZbE-NXmj_jDBdR_tvkPryGlQBGKkIlRjw8gbsPeA7fA8e2TfhXY4vnp-tO6Pz5XvBWqioUXqydOLO70frjPQgQ1F7OFrDB_MRTZ5ORC1JHFtHltVq0I0JNKCMc7bytMql2wDpz4kX7EGG3X1Kiwu515UbwvDOKb3oAk5A9xTQ7fTjdFBVamg1MIbqOt7zpthifmx4NtaeqY2Fvbk64G9uQSvlsPWNHwGBnYdjWtoFi4xxuAlTrd6YiMqniGdDOCr8NXYrGe-CPbqPWoJHS3xKhQdezb4VHa761aerVAb7e5LIsjL-FaxnV9wpJPkbJximWDBOBJ13EzRSJ-6UlFMQURrRK0L7WzMhYCtXKM-E2HR2mRFQnFWtWjJVF_c2qWzvzdPdgV_BVJJwnClWPbmaz0QwL-fRtBvJ4Y0teBdNVrOYJ4V0WhL7HCSn67LGHP0u56uLvpgpwV_jIn7eF-DWigcFI7_STtrN797QPKU96rQ5JQPMifD12IFcwENerV5MH0mjoZ2fSJVLNWmU4zvEF_3RYi04oM3oO-wDOs_JfY5zllhJLodgPtMDbydFPbiU-hbAohVnSbNunJnv4xfUZM2q14gDl5pyxaFPd2MgTlewj-j8wsOzVWRbf9bNzR6tbbPspGMoKDceQRpXpIA1ndU60EOJSRGgyCwVa_rE9tfEXUjK0gASoJdXMtd2VzdC0yMIMO.m3u8"
+    },
+    "s2h": {
+        "name": "Hindi",
+        "type": "iframe",
+        "iframeSrc": "https://s-whindi.vercel.app/"
+    },
+    "t1": {
+        "name": "Hindi",
+        "type": "iframe",
+        "iframeSrc": "https://allinonereborn.online/sony/ptest.php?id=sony-ten-1-hd"
+    },
+    "shoq": {
+        "name": "Shoq Sports",
+        "mpd": "https://live2.shoq.com.pk/live/eds/ICC_Women_World_Cup_2025/DASH/ICC_Women_World_Cup_2025.mpd",
+        "keyId": "a6dfc4f17d70d8d07639659193f03b25",
+        "key": "893eacfabe386144b81733d622a7ad17",
+        "poster": "https://i.ytimg.com/vi/LXb3EKWsInQ/maxresdefault.jpg"
+    },
+    "phin": {
+        "name": "prime hindi",
+        "mpd": "https://ottb.live.cf.ww.aiv-cdn.net/sin-nitro/live/dash/enc/feh5lmnfkl/out/v1/2f30a0bcdbc64a09b2e101d0b71ed290/cenc.mpd",
+        "keyId": "c349ec4cb941fbf48a81798dffe7e5eb",
+        "key": "857bfaea3e7173bc3c63ce3749cabfcf",
+        "poster": "https://via.placeholder.com/1280x720/010409/FFFFFF.png?text=PRIME+HINDI"
+    },
+    "pl1": {
+        "name": "Premier league",
+        "mpd": "https://abizzcbaaaaaaaamlniubkrls2bb7.otte.live.cf.ww.aiv-cdn.net/fra-nitro/live/dash/enc/vwq77hfgzw/out/v1/b858e0b845c64cec953887bd4269e4ea/cenc.mpd",
+        "keyId": "1444f4235529f183f0a5a486befe9cdb",
+        "key": "e5e3fec67a1bb3472a2089c8a0a2557f",
+        "poster": "https://via.placeholder.com/1280x720/010409/FFFFFF.png?text=WILLOW+BY+CRICBUZZ"
+    },
+    "bi2": {
+        "name": "bein sports 2hd",
+        "mpd": "https://aba5sdmaaaaaaaamdwujas5g6mg4r.otte.live.cf.ww.aiv-cdn.net/syd-nitro/live/clients/dash/enc/8m8cd46i1t/out/v1/83985c68e4174e90a58a1f2c024be4c9/cenc.mpd",
+        "keyId": "0b42be2664d7e811d04f3e504e0924c5",
+        "key": "ae24090123b8c72ac5404dc152847cb8",
+        "poster": "https://via.placeholder.com/1280x720/010409/FFFFFF.png?text=WILLOW+BY+CRICBUZZ"
+    },
+    "willow": {
+        "name": "Willow",
+        "mpd": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/tll6uwepxa/out/v1/a7f67cbb33df46539312956427343886/cenc.mpd",
+        "keyId": "290e09c837da78d5cd961978d390515c",
+        "key": "b748836c71e6a4ca68ef5b5652db6247",
+        "poster": "https://via.placeholder.com/1280x720/010409/FFFFFF.png?text=WILLOW"
+    },
+    "tnt2": {
+        "name": "Tnt 2",
+        "mpd": "https://ottb.live.cf.ww.aiv-cdn.net/lhr-nitro/live/dash/enc/f0qvkrra8j/out/v1/f8fa17f087564f51aa4d5c700be43ec4/cenc.mpd",
+        "keyId": "9f51f3dc6313ac8bc668e2d9d1c04dfa",
+        "key": "74bc63e5a193454a91ca494975db33f9",
+        "poster": "https://via.placeholder.com/1280x720/010409/FFFFFF.png?text=TNT+2"
+    },
+    "tnt3": {
+        "name": "Tnt 3",
+        "mpd": "https://ottb.live.cf.ww.aiv-cdn.net/lhr-nitro/live/dash/enc/lsdasbvglv/out/v1/bb548a3626cd4708afbb94a58d71dce9/cenc.mpd",
+        "keyId": "a93c1cbfdccd23233bac13540c693e7f",
+        "key": "2f6ab2e6693eb847eff3c9da8f9d01fc",
+        "poster": "https://via.placeholder.com/1280x720/010409/FFFFFF.png?text=TNT+3"
+    },
+    "tnt4": {
+        "name": "Tnt 4",
+        "mpd": "https://ottb.live.cf.ww.aiv-cdn.net/lhr-nitro/live/dash/enc/i2pcjr4pe5/out/v1/912e9db56d75403b8a9ac0a719110f36/cenc.mpd",
+        "keyId": "192b1115da041585c77200128549efa1",
+        "key": "634e10efe4abbb14be400a3ccbac0258"
+    },
+    "tnt1": {
+        "name": "Tnt 1",
+        "mpd": "https://aba3uy3aaaaaaaamfjv2jyrjdxcj4.otte.live.cf.ww.aiv-cdn.net/sin-nitro/live/dash/enc/bsaaetko8v/out/v1/bd3b0c314fff4bb1ab4693358f3cd2d3/cenc.mpd",
+        "keyId": "d0f2e5c39e70c18f29bf77768a1ad89a",
+        "key": "d6853c51fcf37a18905f0609972395d7"
+    },
+    "ilt20": {
+        "name": "AjayxL!ve",
+        "type": "iframe",
+        "iframeSrc": "https://zee-seven.vercel.app/"
+    },
+    "sh1": {
+        "name": "Starsports",
+        "type": "iframe",
+        "iframeSrc": "https://star-sports-ten.vercel.app/"
+    }
+    
+    
+}
