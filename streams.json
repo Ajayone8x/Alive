@@ -56,10 +56,10 @@
         "type": "iframe",
         "iframeSrc": "https://allrounder-live2.pages.dev/channel/hotstar"
     },
-    "cbs": {
+    "sky": {
         "name": "one8chirag",
         "type": "iframe",
-        "iframeSrc": "https://allrounderlive.pages.dev/dilz?id=65656576"
+        "iframeSrc": "https://skysport-gamma.vercel.app/"
     },
     "jhs": {
         "name": "one8chirag",
