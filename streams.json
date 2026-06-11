@@ -6,6 +6,15 @@
         "key": "eb33c8f6e0c67f1c93fbb655a2def36f",
         "poster": "https://mma.prnewswire.com/media/1919551/WillowTV_Logo.jpg?p=facebook"
     },
+
+"caze": {
+        "name": "fifa26",
+        "mpd": "https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/iayg0kyrof/out/v1/91dc04907f56415b897faccfa9d252da/cenc.mpd",
+        "keyId": "1223d5105392cabf1bb9c2c1fdf6539a",
+        "key": "340b409f4b8f78a343e0363a7938df38",
+        "poster": "https://mma.prnewswire.com/media/1919551/WillowTV_Logo.jpg?p=facebook"
+    },
+
    "ss1hindi": {
     "name": "AjayxL!ve",
     "type": "iframe",
