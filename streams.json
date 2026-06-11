@@ -6,6 +6,19 @@
         "key": "eb33c8f6e0c67f1c93fbb655a2def36f",
         "poster": "https://mma.prnewswire.com/media/1919551/WillowTV_Logo.jpg?p=facebook"
     },
+
+    "sportv": {
+        "name": "Star Sports Hindi",
+        "type": "iframe",
+        "iframeSrc": "https://fifa-world-cup-live.pages.dev/sportv"
+    },
+
+    "fox-sports": {
+        "name": "Fox",
+        "type": "iframe",
+        "iframeSrc": "https://fifa-world-cup-live.pages.dev/fox-sports"
+    
+}, 
 "tsn": {
         "name": "fifa26",
         "mpd": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/3n6slkgh54/out/v1/8977baf175da4b94873194613dd3fe55/cenc.mpd",
