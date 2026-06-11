@@ -92,10 +92,10 @@
         "type": "iframe",
         "iframeSrc": "https://tntsports-c1c.pages.dev/tnt4hd"
     },
-    "hots": {
+    "dsports": {
         "name": "hotstar",
         "type": "iframe",
-        "iframeSrc": "https://allrounder-live2.pages.dev/channel/hotstar"
+        "iframeSrc": "https://fifa-world-cup-live.pages.dev/dsports"
     },
     "sky": {
         "name": "sky sports",
