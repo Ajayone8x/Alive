@@ -127,15 +127,15 @@
         "type": "iframe",
         "iframeSrc": "https://football-5wq.pages.dev/sportv"
     },
-    "laliga": {
+    "zeeunite1": {
         "name": "AjayxL!ve",
         "type": "iframe",
-        "iframeSrc": "https://football-5wq.pages.dev/laliga"
+        "iframeSrc": "https://uplink.lazyspace.online/mytv/zee/stream.php?id=zee53"
     },
-    "ss2": {
+    "zeeunite2": {
         "name": "Star sports 2 HD",
         "type": "iframe",
-        "iframeSrc": "https://ss2hd-theta.vercel.app/"
+        "iframeSrc": "https://uplink.lazyspace.online/mytv/zee/stream.php?id=zee115"
     },
     "hot": {
         "name": "Messi",
@@ -143,7 +143,7 @@
         "iframeSrc": "https://dillzy.cricketstream745.workers.dev/live.m3u8"
     },
     "slf": {
-        "name": "Messi",
+        "name": "Fifa26",
         "type": "m3u8",
         "m3u8": "https://rumble.com/live-hls/71aao4/playlist.m3u8"
     },
