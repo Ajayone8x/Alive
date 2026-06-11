@@ -1,9 +1,9 @@
 {
-    "w2": {
-        "name": "BBL",
-        "mpd": "https://a166aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/clients/dash/enc/mu0a3ytyw0/out/v1/5de8cf540b16463fbebb6aa6999f9f14/cenc.mpd",
-        "keyId": "e8fc994123211108f5ecc7709ff49409",
-        "key": "eb33c8f6e0c67f1c93fbb655a2def36f",
+    "vix": {
+        "name": "Fifa",
+        "mpd": "https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash/enc/8u9cregwlt/out/v1/687f6b2a559943549be271504a948ffd/cenc.mpd",
+        "keyId": "1710ac2bbfcd3032d0f6533850968f47",
+        "key": "d2548dacc8efcd1cd0af0373060c82dc",
         "poster": "https://mma.prnewswire.com/media/1919551/WillowTV_Logo.jpg?p=facebook"
     },
 
