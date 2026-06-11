@@ -5,6 +5,21 @@
         "keyId": "1710ac2bbfcd3032d0f6533850968f47",
         "key": "d2548dacc8efcd1cd0af0373060c82dc",
         "poster": "https://mma.prnewswire.com/media/1919551/WillowTV_Logo.jpg?p=facebook"
+    },"eng": {
+        "name": "fifa26",
+        "mpd": "https://qp-pldt-live-bpk-ucd-prod.akamaized.net/bpk-tv/ch299/default/index.mpd",
+        "keyId": "549ab7cd35a64bb6bb479ecead04d69d",
+        "key": "829799ed534d11fcadeb4b192467e050",
+        "poster": "https://mma.prnewswire.com/media/1919551/WillowTV_Logo.jpg?p=facebook"
+    },
+
+
+"france ": {
+        "name": "fifa26",
+        "mpd": "https://otte.live.fly.ww.aiv-cdn.net/lhr-nitro/live/clients/dash/enc/62qdkefv9f/out/v1/f7d5b356e048494a8325563e8916d50b/cenc.mpd",
+        "keyId": "fd86dde0ae3e14ff51c8fc8f248a50db",
+        "key": "d106ae78b0893da2e4393ece99420baa",
+        "poster": "https://mma.prnewswire.com/media/1919551/WillowTV_Logo.jpg?p=facebook"
     },
 
     "sportv": {
